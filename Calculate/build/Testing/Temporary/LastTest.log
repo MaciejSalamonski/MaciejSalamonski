@@ -1,0 +1,67 @@
+Start testing: Jul 27 15:35 CEST
+----------------------------------------------------------
+1/1 Testing: calculateTests
+1/1 Test: calculateTests
+Command: "/home/maciej/Documents/MyTasks/Calculate/build/calculate-ut"
+Directory: /home/maciej/Documents/MyTasks/Calculate/build
+"calculateTests" start time: Jul 27 15:35 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/maciej/Documents/MyTasks/Calculate/build/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 20 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 20 tests from SomeCalculations/calculateTestFixture
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/0
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/0 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/1
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/1 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/2
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/2 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/3
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/3 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/4
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/4 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/5
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/5 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/6
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/6 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/7
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/7 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/8
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/8 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/9
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/9 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/10
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/10 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/11
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/11 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/12
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/12 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/13
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/13 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/14
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/14 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/15
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/15 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/16
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/16 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/17
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/17 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/18
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/18 (0 ms)
+[ RUN      ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/19
+[       OK ] SomeCalculations/calculateTestFixture.GivenAnInputComandAndPairOfNumbersShouldReturnExpectedResult/19 (0 ms)
+[----------] 20 tests from SomeCalculations/calculateTestFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 20 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"calculateTests" end time: Jul 27 15:35 CEST
+"calculateTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 27 15:35 CEST
