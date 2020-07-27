@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/Fibonacci/fibonacci.cpp
+fibonacci.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/Fibonacci/fibonacci.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/Fibonacci/fibonacci.hpp
+
