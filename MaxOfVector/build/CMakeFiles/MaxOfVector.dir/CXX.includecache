@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/MaxOfVector/main.cpp
+maxOfVector.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/MaxOfVector/maxOfVector.hpp
+iostream
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/MaxOfVector/maxOfVector.cpp
+maxOfVector.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/MaxOfVector/maxOfVector.hpp
+algorithm
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/MaxOfVector/maxOfVector.hpp
+vector
+-
+
