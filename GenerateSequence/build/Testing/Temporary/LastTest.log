@@ -1,0 +1,59 @@
+Start testing: Jul 28 20:40 CEST
+----------------------------------------------------------
+1/1 Testing: generateSequence_test
+1/1 Test: generateSequence_test
+Command: "/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/build/generateSequence-ut"
+Directory: /home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/build
+"generateSequence_test" start time: Jul 28 20:40 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/build/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from GenerateSequenceTest/GenerateSequence
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/0
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/0 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/1
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/1 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/2
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/2 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/3
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/3 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/4
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/4 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/5
+/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/test.cpp:20: Failure
+Expected equality of these values:
+  vectorWithSpecifySequence
+    Which is: {}
+  testParameters.expectedVector
+    Which is: { -2, -4, -6, -8, -10, -12 }
+[  FAILED  ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/5, where GetParam() = 32-byte object <FE-FF FF-FF 06-00 00-00 40-A1 53-30 70-55 00-00 58-A1 53-30 70-55 00-00 58-A1 53-30 70-55 00-00> (1 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/6
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/6 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/7
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/7 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/8
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/8 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/9
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/9 (0 ms)
+[ RUN      ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/10
+[       OK ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/10 (0 ms)
+[----------] 11 tests from GenerateSequenceTest/GenerateSequence (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (3 ms total)
+[  PASSED  ] 10 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] GenerateSequenceTest/GenerateSequence.ShouldGiveAVectorWithSpecifySequenceThatIsEqualToExpectedVector/5, where GetParam() = 32-byte object <FE-FF FF-FF 06-00 00-00 40-A1 53-30 70-55 00-00 58-A1 53-30 70-55 00-00 58-A1 53-30 70-55 00-00>
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"generateSequence_test" end time: Jul 28 20:40 CEST
+"generateSequence_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 28 20:40 CEST

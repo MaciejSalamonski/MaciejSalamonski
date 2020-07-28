@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/generateSequence.cpp
+generateSequence.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/generateSequence.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/generateSequence.hpp
+vector
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/main.cpp
+generateSequence.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/GenerateSequence/generateSequence.hpp
+iostream
+-
+

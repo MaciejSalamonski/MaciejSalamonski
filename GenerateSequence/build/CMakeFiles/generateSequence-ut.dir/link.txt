@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/generateSequence-ut.dir/test.cpp.o CMakeFiles/generateSequence-ut.dir/generateSequence.cpp.o  -o generateSequence-ut  lib/libgtest_main.a lib/libgtest.a -lpthread 
