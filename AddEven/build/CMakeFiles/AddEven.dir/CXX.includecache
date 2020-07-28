@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/AddEven/addEven.cpp
+addEven.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/AddEven/addEven.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/AddEven/addEven.hpp
+vector
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/AddEven/main.cpp
+addEven.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/AddEven/addEven.hpp
+iostream
+-
+vector
+-
+
