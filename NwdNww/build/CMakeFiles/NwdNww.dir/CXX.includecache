@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/main.cpp
+nwdNww.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/nwdNww.hpp
+iostream
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/nwdNww.cpp
+nwdNww.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/nwdNww.hpp
+cmath
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/nwdNww.hpp
+

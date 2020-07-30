@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/NwdNww.dir/main.cpp.o CMakeFiles/NwdNww.dir/nwdNww.cpp.o  -o NwdNww 

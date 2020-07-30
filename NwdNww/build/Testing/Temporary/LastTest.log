@@ -1,0 +1,94 @@
+Start testing: Jul 30 18:49 CEST
+----------------------------------------------------------
+1/1 Testing: NwdNww_test
+1/1 Test: NwdNww_test
+Command: "/home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/build/NwdNww-ut"
+Directory: /home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/build
+"NwdNww_test" start time: Jul 30 18:49 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/maciej/Documents/MyTasks/MaciejSalamonski/NwdNww/build/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 32 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 16 tests from FunctionNwdTest/FunctionNwd
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/0
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/0 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/1
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/1 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/2
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/2 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/3
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/3 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/4
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/4 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/5
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/5 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/6
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/6 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/7
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/7 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/8
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/8 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/9
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/9 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/10
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/10 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/11
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/11 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/12
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/12 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/13
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/13 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/14
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/14 (0 ms)
+[ RUN      ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/15
+[       OK ] FunctionNwdTest/FunctionNwd.functionThatCalculateTheGreatestCommonDivisiorShouldBeGivenAResultEqualToExpectedResult/15 (0 ms)
+[----------] 16 tests from FunctionNwdTest/FunctionNwd (4 ms total)
+
+[----------] 16 tests from FunctionNwwTest/FunctionNww
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/0
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/0 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/1
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/1 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/2
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/2 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/3
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/3 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/4
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/4 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/5
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/5 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/6
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/6 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/7
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/7 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/8
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/8 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/9
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/9 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/10
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/10 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/11
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/11 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/12
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/12 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/13
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/13 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/14
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/14 (0 ms)
+[ RUN      ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/15
+[       OK ] FunctionNwwTest/FunctionNww.functionThatCalculateLowestCommonMultipleShouldBeGivenResultEqualToExpectedResult/15 (0 ms)
+[----------] 16 tests from FunctionNwwTest/FunctionNww (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 2 test suites ran. (9 ms total)
+[  PASSED  ] 32 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"NwdNww_test" end time: Jul 30 18:49 CEST
+"NwdNww_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 30 18:49 CEST
