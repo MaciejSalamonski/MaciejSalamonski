@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/PasswordCheck/main.cpp
+iostream
+-
+validation.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/PasswordCheck/validation.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/PasswordCheck/validation.cpp
+validation.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/PasswordCheck/validation.hpp
+ctype.h
+-
+algorithm
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/PasswordCheck/validation.hpp
+string
+-
+
