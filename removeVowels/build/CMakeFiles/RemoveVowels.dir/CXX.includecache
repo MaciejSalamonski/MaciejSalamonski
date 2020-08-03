@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/removeVowels/removeVowels.cpp
+removeVowels.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/removeVowels/removeVowels.hpp
+algorithm
+-
+array
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/removeVowels/removeVowels.hpp
+string
+-
+vector
+-
+
