@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/VectorOfSharedPointers/main.cpp
+vectorFunctions.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/VectorOfSharedPointers/vectorFunctions.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/VectorOfSharedPointers/vectorFunctions.cpp
+vectorFunctions.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/VectorOfSharedPointers/vectorFunctions.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/VectorOfSharedPointers/vectorFunctions.hpp
+iostream
+-
+memory
+-
+vector
+-
+

@@ -1,0 +1,3 @@
+VectorOfSharedPointers_test 0 0
+---
+VectorOfSharedPointers_test
