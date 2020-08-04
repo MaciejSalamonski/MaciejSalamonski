@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/InsensitivePalindrom.dir/main.cpp.o CMakeFiles/InsensitivePalindrom.dir/insensitivePalindrom.cpp.o  -o InsensitivePalindrom 

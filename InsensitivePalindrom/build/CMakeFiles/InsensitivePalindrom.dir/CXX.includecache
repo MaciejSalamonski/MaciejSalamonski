@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/insensitivePalindrom.cpp
+insensitivePalindrom.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/insensitivePalindrom.hpp
+algorithm
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/insensitivePalindrom.hpp
+string
+-
+

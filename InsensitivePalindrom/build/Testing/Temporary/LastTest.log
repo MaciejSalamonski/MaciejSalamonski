@@ -1,0 +1,112 @@
+Start testing: Aug 04 16:02 CEST
+----------------------------------------------------------
+1/1 Testing: InsensitivePalindrom_test
+1/1 Test: InsensitivePalindrom_test
+Command: "/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/build/InsensitivePalindrom-ut"
+Directory: /home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/build
+"InsensitivePalindrom_test" start time: Aug 04 16:02 CEST
+Output:
+----------------------------------------------------------
+Running main() from /home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/build/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 19 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 19 tests from InsensitivePalindrom/InsensitivePalindromTests
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/0
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/0 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/1
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/1 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/2
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/2 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/3
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/test.cpp:7: Failure
+Expected equality of these values:
+  isPalindrome(GetParam().first)
+    Which is: false
+  GetParam().second
+    Which is: true
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/3, where GetParam() = ("Eva, can I see bees in a cave?", true) (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/4
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/test.cpp:7: Failure
+Expected equality of these values:
+  isPalindrome(GetParam().first)
+    Which is: false
+  GetParam().second
+    Which is: true
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/4, where GetParam() = ("No lemon, no melon", true) (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/5
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/test.cpp:7: Failure
+Expected equality of these values:
+  isPalindrome(GetParam().first)
+    Which is: false
+  GetParam().second
+    Which is: true
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/5, where GetParam() = ("Was it a cat I saw?", true) (2 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/6
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/test.cpp:7: Failure
+Expected equality of these values:
+  isPalindrome(GetParam().first)
+    Which is: false
+  GetParam().second
+    Which is: true
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/6, where GetParam() = ("Red rum, sir, is murder", true) (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/7
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/test.cpp:7: Failure
+Expected equality of these values:
+  isPalindrome(GetParam().first)
+    Which is: false
+  GetParam().second
+    Which is: true
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/7, where GetParam() = ("Are we not pure? \xE2\x80\x9CNo, sir!\xE2\x80\x9D Panama\xE2\x80\x99s moody Noriega brags.It is garbage!\xE2\x80\x9D Irony dooms a man\xE2\x80\x94" "a prisoner up to new era."
+    As Text: "Are we not pure? “No, sir!” Panama’s moody Noriega brags.It is garbage!” Irony dooms a man—a prisoner up to new era.", true) (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/8
+/home/maciej/Documents/MyTasks/MaciejSalamonski/InsensitivePalindrom/test.cpp:7: Failure
+Expected equality of these values:
+  isPalindrome(GetParam().first)
+    Which is: false
+  GetParam().second
+    Which is: true
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/8, where GetParam() = ("Dennis, Nell, Edna, Leon, Nedra, Anita, Rolf, Nora, Alice, Carol,Leo, Jane, Reed, Dena, Dale, Basil, Rae, Penny, Lana, Dave, Denny,Lena, Ida, Bernadette, Ben, Ray, Lila, Nina, Jo, Ira, Mara, Sara, Mario, Jan, Ina, Lily, Arne, Bette, Dan, Reba, Diane, Lynn, Ed, Eva,Dana, Lynne, Pearl, Isabel, Ada, Ned, Dee, Rena, Joel, Lora, Cecil, Aaron, Flora, Tina, Arden, Noel, and Ellen sinned.", true) (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/9
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/9 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/10
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/10 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/11
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/11 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/12
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/12 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/13
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/13 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/14
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/14 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/15
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/15 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/16
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/16 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/17
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/17 (0 ms)
+[ RUN      ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/18
+[       OK ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/18 (0 ms)
+[----------] 19 tests from InsensitivePalindrom/InsensitivePalindromTests (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 1 test suite ran. (6 ms total)
+[  PASSED  ] 13 tests.
+[  FAILED  ] 6 tests, listed below:
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/3, where GetParam() = ("Eva, can I see bees in a cave?", true)
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/4, where GetParam() = ("No lemon, no melon", true)
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/5, where GetParam() = ("Was it a cat I saw?", true)
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/6, where GetParam() = ("Red rum, sir, is murder", true)
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/7, where GetParam() = ("Are we not pure? \xE2\x80\x9CNo, sir!\xE2\x80\x9D Panama\xE2\x80\x99s moody Noriega brags.It is garbage!\xE2\x80\x9D Irony dooms a man\xE2\x80\x94" "a prisoner up to new era."
+    As Text: "Are we not pure? “No, sir!” Panama’s moody Noriega brags.It is garbage!” Irony dooms a man—a prisoner up to new era.", true)
+[  FAILED  ] InsensitivePalindrom/InsensitivePalindromTests.CheckPalindrome/8, where GetParam() = ("Dennis, Nell, Edna, Leon, Nedra, Anita, Rolf, Nora, Alice, Carol,Leo, Jane, Reed, Dena, Dale, Basil, Rae, Penny, Lana, Dave, Denny,Lena, Ida, Bernadette, Ben, Ray, Lila, Nina, Jo, Ira, Mara, Sara, Mario, Jan, Ina, Lily, Arne, Bette, Dan, Reba, Diane, Lynn, Ed, Eva,Dana, Lynne, Pearl, Isabel, Ada, Ned, Dee, Rena, Joel, Lora, Cecil, Aaron, Flora, Tina, Arden, Noel, and Ellen sinned.", true)
+
+ 6 FAILED TESTS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"InsensitivePalindrom_test" end time: Aug 04 16:02 CEST
+"InsensitivePalindrom_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 04 16:02 CEST

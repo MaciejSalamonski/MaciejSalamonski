@@ -1,0 +1,3 @@
+InsensitivePalindrom_test 0 0
+---
+InsensitivePalindrom_test
