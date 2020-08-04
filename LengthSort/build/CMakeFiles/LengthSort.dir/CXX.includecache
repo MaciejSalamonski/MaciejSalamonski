@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/LengthSort/sort.cpp
+sort.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/LengthSort/sort.hpp
+algorithm
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/LengthSort/sort.hpp
+deque
+-
+forward_list
+-
+string
+-
+

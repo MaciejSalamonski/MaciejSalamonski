@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/LengthSort.dir/main.cpp.o CMakeFiles/LengthSort.dir/sort.cpp.o  -o LengthSort 

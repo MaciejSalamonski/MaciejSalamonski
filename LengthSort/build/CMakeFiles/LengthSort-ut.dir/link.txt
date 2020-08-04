@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/LengthSort-ut.dir/test.cpp.o CMakeFiles/LengthSort-ut.dir/sort.cpp.o  -o LengthSort-ut  lib/libgtest_main.a lib/libgtest.a -lpthread 
