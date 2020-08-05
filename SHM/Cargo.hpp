@@ -12,6 +12,7 @@ public:
 
     Cargo& operator+=(uint16_t);
     Cargo& operator-=(uint16_t);
+    bool operator==(const Cargo&) const;
 
     std::string getName() const;
     uint16_t getAmount() const;
