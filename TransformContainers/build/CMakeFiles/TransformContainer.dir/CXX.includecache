@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/TransformContainers/transformContainerToMap.cpp
+transformContainerToMap.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/TransformContainers/transformContainerToMap.hpp
+algorithm
+-
+iostream
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/TransformContainers/transformContainerToMap.hpp
+deque
+-
+list
+-
+map
+-
+

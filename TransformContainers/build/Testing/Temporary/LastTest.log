@@ -1,0 +1,21 @@
+Start testing: Aug 05 18:00 CEST
+----------------------------------------------------------
+1/1 Testing: TransformContainer_test
+1/1 Test: TransformContainer_test
+Command: "/home/maciej/Documents/MyTasks/MaciejSalamonski/TransformContainers/build/TransformContainer-ut"
+Directory: /home/maciej/Documents/MyTasks/MaciejSalamonski/TransformContainers/build
+"TransformContainer_test" start time: Aug 05 18:00 CEST
+Output:
+----------------------------------------------------------
+1: Ala
+2: Kot
+3: Marysia
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TransformContainer_test" end time: Aug 05 18:00 CEST
+"TransformContainer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 05 18:00 CEST
