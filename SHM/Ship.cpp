@@ -46,6 +46,14 @@ uint16_t Ship::getCrew() const {
     return crew_;
 }
 
+Cargo* Ship::getCargo(uint16_t index) const {
+    return cargos_[index];
+}
+
+std::vector<Cargo*> Ship::getCargos() const {
+    return cargos_;
+}
+
 void Ship::setName(const std::string& name) {
     name_ = name;
 }

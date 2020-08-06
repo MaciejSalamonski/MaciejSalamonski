@@ -1,6 +1,9 @@
 #pragma once
 
 #include <string>
+#include <vector>
+
+#include "Cargo.hpp"
 
 class Ship {
     uint16_t id_;
@@ -9,6 +12,7 @@ class Ship {
     uint16_t maxCrew_;
     uint16_t capacity_;
     uint16_t crew_;
+    std::vector<Cargo*> cargos_;
 
 public:
     Ship();
@@ -24,6 +28,8 @@ public:
     uint16_t getMaxCrew() const;
     uint16_t getCapacity() const;
     uint16_t getCrew() const;
+    Cargo* getCargo(uint16_t index) const;
+    std::vector<Cargo*> getCargos() const;
 
     void setName(const std::string&);
 };
