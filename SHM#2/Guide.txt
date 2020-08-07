@@ -1,0 +1,65 @@
+PROJEKT SHM (Symulator Handlu Morskiego) - PRZEWODNIK / TODO / ITD
+
+####################KLASA CARGO
+
+Klasa Cargo bedzie szkieletem kazdego towaru (klasa bazowa). Bedzie ona umozliwiala utworzenie specfyficznych towarow.
+Dziedziczyc od niej beda klasy Fruit, Alcohol, Item. Z klas Cargo beda korzystaly klasy Store oraz klasa Ship 
+
+Skladniki klasy:
+
+atrybuty: name, amount, basePrice
+kontruktory: domylny, posiadajacy wszystkie atrybuty
+operatory: dodawania, odjemowania, porownania
+gettery: GetName, GetAmount, GetBasePrice
+
+####################KLASA SHIP
+
+Klasa Ship bedzie gromadzic dane ze statku. Informacje na temat predkosci, nazwy itd.
+
+Skladniki klasy:
+
+atrybuty: capacity, crew, speed, name, id, maxCrew
+Konstruktory: bezargumentowy, przyjmujacy id (-1), zawierajacy wszystie atrybuty, zawierajacy id
+speed, maxCrew i korzystajacy z innego konstruktora
+gettery: getCapacity, getCrew, GetSpeed, GetName, GetId
+settety: setName
+metody: setName
+operatory: dodowania crew, odejmowania crew 
+
+####################KLASA COORDINATES   
+
+Klasa odpowiedzialna za utworzenie wspolrzednych X i Y na mapie. Korzystac z niej bedzie Klasa Island.
+
+Skladniki klasy:
+
+Atrrybuty: positionX_, positionY_
+Konsturktory: domyslny, posiadajacy wyzej wymieione atrubyty
+gettery: getPositionX, getPositionY
+Operatory: porownania
+
+#####################KLASA ISLAND
+
+Klasa, ktora korzysta z klasy Coordinates. Klasa ta jest odpoiwedizalna za ustalenie pozycji danej wyspy
+
+Skladniki klasy:
+
+atrybuty: position
+getter: koordynaty
+Konsturktoty: domyslny, z pozycjami wyspy
+
+#####################KLASA mapie
+
+Klasa, ktora korzysta z klasy Island. Klasa ta generuje 10 unikalnych wysp o roznych wspolrzednych w konstruktorze.
+Posaida takze funkcjonalnosci takie jak: Przeszukiwanie wektora wysp i zwracanie interesujacej nas wyspy
+
+######################KlASA PLAYER
+
+Klasa player jest odpowiedizalan za przechowywanie danych poszczegolnego gracza
+
+Skladniki klasy:
+
+atrubyty: money, available space, ship_ ( wskaznik na lodz gracza)
+gettery: money availablespace ship_
+konstruktor domylny i ze wszysktimi parametrami
+metody getSpeed, getCargo, availblaSpaceUpdate
+
