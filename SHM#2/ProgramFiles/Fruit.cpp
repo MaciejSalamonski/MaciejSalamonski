@@ -27,6 +27,7 @@ uint16_t Fruit::getTimeElapsed() const {
 }
 
 uint16_t Fruit::getPrice() const {
+    return static_cast<int>(basePrice_ * float(timeElapsed_ / expiryDate_));
 }
 
 Cargo& Fruit::operator+=(const uint16_t newFruitAmount) {
@@ -40,4 +41,12 @@ Cargo& Fruit::operator-=(const uint16_t usedFruitAmount) {
     }
     amount_ -= usedFruitAmount;
     return *this;
+}
+
+bool Fruit::operator==(const Cargo& cargo) const {
+    if (typeid(*this) == typeid(cargo)) {
+        return cargo.getName() == name_ && cargo.getAmount() == amount_ &&
+               cargo.getBasePrice() == basePrice_ && cargo.getPrice() == getPrice();
+    }
+    return false;
 }

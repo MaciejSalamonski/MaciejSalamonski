@@ -35,8 +35,11 @@ Cargo& Alcohol::operator-=(const uint16_t usedAlcoholAmount) {
     amount_ -= usedAlcoholAmount;
     return *this;
 }
-/*
+
 bool Alcohol::operator==(const Cargo& cargo) const {
-    return cargo.getName() == name_ && cargo.getPrice
+    if (typeid(*this) == typeid(cargo)) {
+        return cargo.getName() == name_ && cargo.getAmount() == amount_ &&
+               cargo.getBasePrice() == basePrice_ && cargo.getPrice() == getPrice();
+    }
+    return false;
 }
-*/
