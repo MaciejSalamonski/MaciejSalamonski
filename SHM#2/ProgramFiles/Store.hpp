@@ -10,7 +10,7 @@ enum class Response {
     lack_of_space
 };
 
-class Store : public Observer {
+class Store : public Observer { 
     std::vector<std::shared_ptr<Cargo>> cargos_;
 
     void generateCargo();

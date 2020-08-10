@@ -1,5 +1,6 @@
 #include "Ship.hpp"
 
+#include <algorithm>
 #include <iostream>
 
 Ship::Ship()
@@ -29,13 +30,6 @@ uint16_t Ship::getMaxCrew() const {
 uint16_t Ship::getCapacity() const {
     return capacity_;
 }
-Cargo* Ship::getCargo(uint16_t index) const {
-    return cargos_[index];
-}
-
-std::vector<Cargo*> Ship::getCargos() const {
-    return cargos_;
-}
 
 void Ship::setName(const std::string& name) {
     name_ = name;
@@ -61,4 +55,34 @@ Ship& Ship::operator-=(const uint16_t retiredCrewMembers) {
 
 void Ship::nextDay() {
     delegate_->payCrew(crew_);
+}
+
+void Ship::load(std::shared_ptr<Cargo> cargo) {
+    uint16_t sumAmount{};
+
+    for (const auto& el : cargos_) {
+        sumAmount += el->getAmount();
+    }
+
+    if (sumAmount > getCapacity()) {
+        std::cerr << "Our ship is to small to cary all the cargos, Captain!";
+        return;
+    }
+
+    auto isCargoUnique = std::find_if(cargos_.begin(), cargos_.end(),
+                                      [cargo](const auto& el) {
+                                          return cargo->getBasePrice() == el->getBasePrice() &&
+                                                 cargo->getPrice() == el->getPrice() &&
+                                                 cargo->getName() == el->getName()
+                                      });
+
+    if (isCargoUnique == cargos_.end()) {
+        cargos_.push_back(cargo);
+        return;
+    }
+
+    **isCargoUnique += cargo->getAmount();
+}
+
+void unload(Cargo*) {
 }

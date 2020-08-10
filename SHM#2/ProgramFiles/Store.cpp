@@ -30,6 +30,7 @@ void Store::removeFromStore(Cargo*) {
 }
 
 Cargo* Store::getCargo(const uint16_t index) const {
+    
     return cargos_[index].get();
 }
 
