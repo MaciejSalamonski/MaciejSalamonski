@@ -23,4 +23,7 @@ public:
     Cargo& operator+=(const uint16_t) override;
     Cargo& operator-=(const uint16_t) override;
     bool operator==(const Cargo&) const override;
+
+    // Override from Observer
+    void nextDay() override;
 };

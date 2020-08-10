@@ -5,7 +5,7 @@
 
 #include "Cargo.hpp"
 
-class Ship {
+class Ship : public Observer {
     uint16_t id_;
     std::string name_;
     uint16_t speed_;
@@ -32,4 +32,7 @@ public:
 
     Ship& operator+=(const uint16_t);
     Ship& operator-=(const uint16_t);
+
+    // Override from Observer
+    void nextDay() override;
 };

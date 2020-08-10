@@ -1,8 +1,9 @@
 #pragma once
 
+#include "Observer.hpp"
 #include "string"
 
-class Cargo {
+class Cargo : public Observer {
 protected:
     std::string name_;
     uint16_t amount_;

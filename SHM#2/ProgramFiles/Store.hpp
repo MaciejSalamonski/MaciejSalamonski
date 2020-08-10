@@ -10,7 +10,7 @@ enum class Response {
     lack_of_space
 };
 
-class Store {
+class Store : public Observer {
     std::vector<std::shared_ptr<Cargo>> cargos_;
 
 public:
@@ -19,4 +19,7 @@ public:
     Response buy(Cargo*, uint16_t, Player*);
     Response sell(Cargo*, uint16_t, Player*);
     std::string getResponseMessage(const Response);
+
+    // Override from Observer
+    void nextDay() override;
 };
