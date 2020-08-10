@@ -15,6 +15,8 @@ public:
     uint16_t getTimeElapsed() const;
     uint16_t getExpiryDate() const;
 
+    Fruit& operator--();
+
     // Override from Cargo
     std::string getName() const override;
     uint16_t getAmount() const override;

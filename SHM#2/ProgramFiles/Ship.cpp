@@ -5,8 +5,8 @@
 Ship::Ship()
     : id_(-1) {}
 
-Ship::Ship(uint16_t id, const std::string& name, uint16_t speed, uint16_t crew, uint16_t maxCrew, uint16_t capacity)
-    : id_(id), name_(name), speed_(speed), crew_(crew), maxCrew_(maxCrew), capacity_(capacity) {}
+Ship::Ship(uint16_t id, const std::string& name, uint16_t speed, Delegate* delegate, uint16_t maxCrew, uint16_t capacity)
+    : id_(id), name_(name), speed_(speed), delegate_(delegate), maxCrew_(maxCrew), capacity_(capacity) {}
 
 Ship::Ship(uint16_t id, uint16_t speed, uint16_t maxCrew)
     : Ship(id, "", speed, 0, maxCrew, 0) {}
@@ -57,4 +57,8 @@ Ship& Ship::operator-=(const uint16_t retiredCrewMembers) {
     }
     crew_ -= retiredCrewMembers;
     return *this;
+}
+
+void Ship::nextDay() {
+    delegate_->payCrew(crew_);
 }

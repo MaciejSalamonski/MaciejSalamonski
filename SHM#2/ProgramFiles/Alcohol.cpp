@@ -43,3 +43,7 @@ bool Alcohol::operator==(const Cargo& cargo) const {
     }
     return false;
 }
+
+void Alcohol::nextDay() {
+    return;
+}

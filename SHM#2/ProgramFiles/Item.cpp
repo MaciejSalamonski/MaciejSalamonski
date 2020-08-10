@@ -43,3 +43,7 @@ bool Item::operator==(const Cargo& cargo) const {
     }
     return false;
 }
+
+void Item::nextDay() {
+    return;
+}

@@ -13,6 +13,10 @@ enum class Response {
 class Store : public Observer {
     std::vector<std::shared_ptr<Cargo>> cargos_;
 
+    void generateCargo();
+    Cargo* findMatchCargo(Cargo*);
+    void removeFromStore(Cargo*);
+
 public:
     Store() = default;
     Cargo* getCargo(const uint16_t) const;

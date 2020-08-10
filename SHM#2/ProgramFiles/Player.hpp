@@ -2,9 +2,10 @@
 
 #include <memory>
 
+#include "Delegate.hpp"
 #include "Ship.hpp"
 
-class Player {
+class Player : public Delegate {
     std::shared_ptr<Ship> ship_;
     uint16_t money_;
     uint16_t availableSpace_;
@@ -21,4 +22,6 @@ public:
     uint16_t getSpeed() const;
     Cargo* getCargo(uint16_t) const;
     Cargo* getCargos() const;
+
+    void payCrew(uint16_t) override;
 };

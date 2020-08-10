@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "Cargo.hpp"
+#include "Player.hpp"
 
 class Ship : public Observer {
     uint16_t id_;
@@ -12,11 +13,12 @@ class Ship : public Observer {
     uint16_t crew_;
     uint16_t maxCrew_;
     uint16_t capacity_;
+    Delegate* delegate_;
     std::vector<Cargo*> cargos_;
 
 public:
     Ship();
-    Ship(uint16_t, const std::string&, uint16_t, uint16_t, uint16_t, uint16_t);
+    Ship(uint16_t, const std::string&, uint16_t, Delegate*, uint16_t, uint16_t);
     Ship(uint16_t, uint16_t, uint16_t);
 
     uint16_t getId() const;
