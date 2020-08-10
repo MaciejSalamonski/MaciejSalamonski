@@ -22,6 +22,4 @@ public:
     virtual Cargo& operator+=(const uint16_t) = 0;
     virtual Cargo& operator-=(const uint16_t) = 0;
     virtual bool operator==(const Cargo&) const = 0;
-
-    virtual void Print() = 0;
 };
