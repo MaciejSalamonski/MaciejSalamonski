@@ -73,7 +73,7 @@ void Ship::load(std::shared_ptr<Cargo> cargo) {
                                       [cargo](const auto& el) {
                                           return cargo->getBasePrice() == el->getBasePrice() &&
                                                  cargo->getPrice() == el->getPrice() &&
-                                                 cargo->getName() == el->getName()
+                                                 cargo->getName() == el->getName();
                                       });
 
     if (isCargoUnique == cargos_.end()) {
@@ -84,5 +84,21 @@ void Ship::load(std::shared_ptr<Cargo> cargo) {
     **isCargoUnique += cargo->getAmount();
 }
 
-void unload(Cargo*) {
+void Ship::unload(Cargo* cargo) {
+    auto choosenCargo = std::find_if(cargos_.begin(), cargos_.end(),
+                                     [cargo](const auto& el) {
+                                         return cargo->getBasePrice() == el->getBasePrice() &&
+                                                cargo->getPrice() == el.getPrice() &&
+                                                cargo->getName() == el.getName();
+                                     });
+
+    if (choosenCargo == cargos_.end()) {
+        return;
+    }
+
+    if ((*choosenCargo)->getAmount() <= cargo->getAmount()) {
+        cargos_.erase(choosenCargo);
+        return;
+    }
+    **choosenCargo -= cargo->getAmount();
 }
