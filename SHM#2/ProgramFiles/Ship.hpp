@@ -16,8 +16,8 @@ class Ship : public Observer {
     Delegate* delegate_;
     std::vector<std::shared_ptr<Cargo>> cargos_;
 
-    Cargo* findMatchCargo(Cargo*);
-    void removeFromStorage(Cargo*);
+    std::vector<std::shared_ptr<Cargo>>::iterator findMatchCargo(std::shared_ptr<Cargo>);
+    void removeFromStorage(std::shared_ptr<Cargo>);
 
 public:
     Ship();
@@ -34,7 +34,7 @@ public:
     void setName(const std::string&);
 
     void load(std::shared_ptr<Cargo>);
-    void unload(Cargo*);
+    void unload(std::shared_ptr<Cargo>);
 
     Ship& operator+=(const uint16_t);
     Ship& operator-=(const uint16_t);

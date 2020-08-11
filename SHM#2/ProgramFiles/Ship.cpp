@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <iostream>
+#include <iterator>
 
 Ship::Ship()
     : id_(-1) {}
@@ -53,8 +54,14 @@ Ship& Ship::operator-=(const uint16_t retiredCrewMembers) {
     return *this;
 }
 
-void Ship::nextDay() {
-    delegate_->payCrew(crew_);
+std::vector<std::shared_ptr<Cargo>>::iterator Ship::findMatchCargo(std::shared_ptr<Cargo> cargo) {
+    auto findMatchCargo = std::find_if(cargos_.begin(), cargos_.end(),
+                                       [cargo](const auto& el) {
+                                           return cargo->getBasePrice() == el->getBasePrice() &&
+                                                  cargo->getPrice() == el->getPrice() &&
+                                                  cargo->getName() == el->getName();
+                                       });
+    return findMatchCargo;
 }
 
 void Ship::load(std::shared_ptr<Cargo> cargo) {
@@ -69,12 +76,7 @@ void Ship::load(std::shared_ptr<Cargo> cargo) {
         return;
     }
 
-    auto isCargoUnique = std::find_if(cargos_.begin(), cargos_.end(),
-                                      [cargo](const auto& el) {
-                                          return cargo->getBasePrice() == el->getBasePrice() &&
-                                                 cargo->getPrice() == el->getPrice() &&
-                                                 cargo->getName() == el->getName();
-                                      });
+    auto isCargoUnique = findMatchCargo(cargo);
 
     if (isCargoUnique == cargos_.end()) {
         cargos_.push_back(cargo);
@@ -84,21 +86,24 @@ void Ship::load(std::shared_ptr<Cargo> cargo) {
     **isCargoUnique += cargo->getAmount();
 }
 
-void Ship::unload(Cargo* cargo) {
-    auto choosenCargo = std::find_if(cargos_.begin(), cargos_.end(),
-                                     [cargo](const auto& el) {
-                                         return cargo->getBasePrice() == el->getBasePrice() &&
-                                                cargo->getPrice() == el.getPrice() &&
-                                                cargo->getName() == el.getName();
-                                     });
+void Ship::removeFromStorage(std::shared_ptr<Cargo> cargo) {
+    cargos_.erase(findMatchCargo(cargo));
+}
+
+void Ship::unload(std::shared_ptr<Cargo> cargo) {
+    auto choosenCargo = findMatchCargo(cargo);
 
     if (choosenCargo == cargos_.end()) {
         return;
     }
 
     if ((*choosenCargo)->getAmount() <= cargo->getAmount()) {
-        cargos_.erase(choosenCargo);
+        removeFromStorage(cargo);
         return;
     }
     **choosenCargo -= cargo->getAmount();
+}
+
+void Ship::nextDay() {
+    delegate_->payCrew(crew_);
 }
