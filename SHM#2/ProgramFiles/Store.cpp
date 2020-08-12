@@ -1,11 +1,16 @@
 #include "Store.hpp"
 
+#include <algorithm>
+#include <iterator>
+#include <random>
+
 #include "Alcohol.hpp"
 #include "Fruit.hpp"
 #include "Item.hpp"
+#include "Store.hpp"
 
 void Store::generateCargo() {
-    cargos_ = {
+    std::vector<std::shared_ptr<Cargo>> generateCargos{
         std::make_shared<Alcohol>(Alcohol(0, "Vodka", 30, 40)),
         std::make_shared<Alcohol>(Alcohol(0, "Rum", 50, 70)),
         std::make_shared<Alcohol>(Alcohol(0, "Whisky", 35, 45)),
@@ -23,18 +28,34 @@ void Store::generateCargo() {
         std::make_shared<Item>(Item(0, "Compass", 90, Rarity::epic))};
 }
 
-Cargo* Store::findMatchCargo(Cargo*) {
+std::vector<std::shared_ptr<Cargo>>::iterator Store::findMatchCargo(Cargo* cargo) {
+    if (cargo) {
+        auto findCargo = std::find_if(cargos_.begin(), cargos_.end(),
+                                      [cargo](const auto& el) {
+                                          return cargo->getBasePrice() == el->getBasePrice() &&
+                                                 cargo->getPrice() == el->getPrice() &&
+                                                 cargo->getName() == el->getName();
+                                      });
+
+        return findCargo;
+    }
 }
 
-void Store::removeFromStore(Cargo*) {
+void Store::removeFromStore(Cargo* cargo) {
+    cargos_.erase(findMatchCargo(cargo));
+}
+
+void load(std::shared_ptr<Cargo> cargo) {
+}
+
+void unload(Cargo* cargo) {
 }
 
 Cargo* Store::getCargo(const uint16_t index) const {
-    
     return cargos_[index].get();
 }
 
-std::string getResponseMessage(const Response responseMessage) {
+std::string getResponseMessage(const Response& responseMessage) {
     switch (responseMessage) {
     case Response::done:
         return "Done!";

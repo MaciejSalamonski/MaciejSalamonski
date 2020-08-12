@@ -10,19 +10,21 @@ enum class Response {
     lack_of_space
 };
 
-class Store : public Observer { 
+class Store : public Observer {
     std::vector<std::shared_ptr<Cargo>> cargos_;
 
     void generateCargo();
-    Cargo* findMatchCargo(Cargo*);
+    std::vector<std::shared_ptr<Cargo>>::iterator findMatchCargo(Cargo*);
     void removeFromStore(Cargo*);
 
 public:
     Store() = default;
+    void load(std::shared_ptr<Cargo>);
+    void unload(Cargo*);
+    std::string getResponseMessage(const Response&);
     Cargo* getCargo(const uint16_t) const;
     Response buy(Cargo*, uint16_t, Player*);
     Response sell(Cargo*, uint16_t, Player*);
-    std::string getResponseMessage(const Response);
 
     // Override from Observer
     void nextDay() override;
