@@ -38,6 +38,10 @@ void Player::updateAvailableSpace() {
     availableSpace_ = space;
 }
 
+void Player::setMoney(uint16_t money) {
+    money_ = money;
+}
+
 void Player::payCrew(uint16_t money) {
     if (money_ > money) {
         money_ -= money;

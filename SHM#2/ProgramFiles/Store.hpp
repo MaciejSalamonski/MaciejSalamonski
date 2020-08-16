@@ -20,12 +20,12 @@ class Store : public Observer {
 
 public:
     Store() = default;
-    void load(std::shared_ptr<Cargo>);
-    void unload(std::shared_ptr<Cargo>);
+    void load(std::shared_ptr<Cargo>, uint16_t);
+    void unload(std::shared_ptr<Cargo>, uint16_t);
     std::string getResponseMessage(const Response&);
     Cargo* getCargo(const uint16_t) const;
-    Response buy(Cargo*, uint16_t, Player*);
-    Response sell(Cargo*, uint16_t, Player*);
+    Response buy(std::shared_ptr<Cargo>, uint16_t, Player*);
+    Response sell(std::shared_ptr<Cargo>, uint16_t, Player*);
 
     // Override from Observer
     void nextDay() override;

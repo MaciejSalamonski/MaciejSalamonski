@@ -59,7 +59,7 @@ void Store::removeFromStore(std::shared_ptr<Cargo> cargo) {
     cargos_.erase(findMatchCargo(cargo));
 }
 
-void Store::load(std::shared_ptr<Cargo> cargo) {
+void Store::load(std::shared_ptr<Cargo> cargo, uint16_t amount) {
     auto isCargoUniqe = findMatchCargo(cargo);
 
     if (isCargoUniqe == cargos_.end()) {
@@ -67,10 +67,10 @@ void Store::load(std::shared_ptr<Cargo> cargo) {
         return;
     }
 
-    **isCargoUniqe += cargo->getAmount();
+    **isCargoUniqe += amount;
 }
 
-void Store::unload(std::shared_ptr<Cargo> cargo) {
+void Store::unload(std::shared_ptr<Cargo> cargo, uint16_t amount) {
     auto choosenCargo = findMatchCargo(cargo);
 
     if (choosenCargo == cargos_.end()) {
@@ -82,7 +82,7 @@ void Store::unload(std::shared_ptr<Cargo> cargo) {
         return;
     }
 
-    **choosenCargo -= cargo->getAmount();
+    **choosenCargo -= amount;
 }
 
 Cargo* Store::getCargo(const uint16_t index) const {
@@ -102,8 +102,30 @@ std::string getResponseMessage(const Response& responseMessage) {
     }
 }
 
-Response Store::buy(Cargo* cargo, uint16_t amount, Player* player) {
+Response Store::buy(std::shared_ptr<Cargo> cargo, uint16_t amount, Player* player) {
+    if (amount > player->getAvailableSpace()) {
+        return Response::lack_of_space;
+    }
+
+    if (amount * cargo->getPrice() > player->getMoney()) {
+        return Response::lack_of_money;
+    }
+
+    if (findMatchCargo(cargo) == cargos_.end()) {
+        return Response::lack_of_cargo;
+    }
+
+    unload(cargo, amount);
+    player->setMoney(player->getMoney() - cargo->getPrice());
+    player->loadCargoOnShip(cargo);
+
+    return Response::done;
 }
 
-Response Store::sell(Cargo* cargo, uint16_t amount, Player* player) {
+Response Store::sell(std::shared_ptr<Cargo> cargo, uint16_t amount, Player* player) {
+    load(cargo, amount);
+    player->setMoney(player->getMoney() + cargo->getPrice());
+    player->unloadCargoFromShip(cargo);
+
+    return Response::done;
 }

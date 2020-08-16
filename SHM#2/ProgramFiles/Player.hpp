@@ -23,5 +23,7 @@ public:
     Cargo* getCargo(uint16_t) const;
     Cargo* getCargos() const;
 
+    void setMoney(uint16_t);
+
     void payCrew(uint16_t) override;
 };
