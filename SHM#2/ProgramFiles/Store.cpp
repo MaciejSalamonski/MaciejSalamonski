@@ -10,7 +10,7 @@
 #include "Store.hpp"
 
 void Store::generateCargo() {
-    std::vector<std::shared_ptr<Cargo>> generateCargos{
+    std::vector<std::shared_ptr<Cargo>> possibleCargos{
         std::make_shared<Alcohol>(Alcohol(0, "Vodka", 30, 40)),
         std::make_shared<Alcohol>(Alcohol(0, "Rum", 50, 70)),
         std::make_shared<Alcohol>(Alcohol(0, "Whisky", 35, 45)),
@@ -21,38 +21,72 @@ void Store::generateCargo() {
         std::make_shared<Fruit>(Fruit(0, "Strawberries", 4, 6)),
         std::make_shared<Fruit>(Fruit(0, "Peach", 8, 10)),
         std::make_shared<Fruit>(Fruit(0, "Cherry", 12, 12)),
-        std::make_shared<Item>(Item(0, "Knife", 25, Rarity::rare)),
         std::make_shared<Item>(Item(0, "Bottle", 10, Rarity::common)),
+        std::make_shared<Item>(Item(0, "Knife", 25, Rarity::rare)),
         std::make_shared<Item>(Item(0, "Sword", 70, Rarity::epic)),
-        std::make_shared<Item>(Item(0, "Golden Necklace", 200, Rarity::legendary)),
-        std::make_shared<Item>(Item(0, "Compass", 90, Rarity::epic))};
+        std::make_shared<Item>(Item(0, "Compass", 90, Rarity::epic)),
+        std::make_shared<Item>(Item(0, "Golden Necklace", 200, Rarity::legendary))};
+
+    randomizeCargo(possibleCargos);
 }
 
-std::vector<std::shared_ptr<Cargo>>::iterator Store::findMatchCargo(Cargo* cargo) {
-    if (cargo) {
-        auto findCargo = std::find_if(cargos_.begin(), cargos_.end(),
-                                      [cargo](const auto& el) {
-                                          return cargo->getBasePrice() == el->getBasePrice() &&
-                                                 cargo->getPrice() == el->getPrice() &&
-                                                 cargo->getName() == el->getName();
-                                      });
+constexpr uint16_t minRandomAmount = 0;
+constexpr uint16_t maxRandomAmount = 10;
 
-        return findCargo;
+void Store::randomizeCargo(const std::vector<std::shared_ptr<Cargo>>& possibleCargos) {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> randomAmount(minRandomAmount, maxRandomAmount);
+
+    for (const auto& cargo : possibleCargos) {
+        *cargo += randomAmount(gen);
+        cargos_.push_back(cargo);
     }
 }
 
-void Store::removeFromStore(Cargo* cargo) {
+std::vector<std::shared_ptr<Cargo>>::iterator Store::findMatchCargo(std::shared_ptr<Cargo> cargo) {
+    auto findCargo = std::find_if(cargos_.begin(), cargos_.end(),
+                                  [cargo](const auto& el) {
+                                      return cargo->getBasePrice() == el->getBasePrice() &&
+                                             cargo->getPrice() == el->getPrice() &&
+                                             cargo->getName() == el->getName();
+                                  });
+
+    return findCargo;
+}
+
+void Store::removeFromStore(std::shared_ptr<Cargo> cargo) {
     cargos_.erase(findMatchCargo(cargo));
 }
 
-void load(std::shared_ptr<Cargo> cargo) {
+void Store::load(std::shared_ptr<Cargo> cargo) {
+    auto isCargoUniqe = findMatchCargo(cargo);
+
+    if (isCargoUniqe == cargos_.end()) {
+        cargos_.push_back(cargo);
+        return;
+    }
+
+    **isCargoUniqe += cargo->getAmount();
 }
 
-void unload(Cargo* cargo) {
+void Store::unload(std::shared_ptr<Cargo> cargo) {
+    auto choosenCargo = findMatchCargo(cargo);
+
+    if (choosenCargo == cargos_.end()) {
+        return;
+    }
+
+    if ((*choosenCargo)->getAmount() <= cargo->getAmount()) {
+        removeFromStore(cargo);
+        return;
+    }
+
+    **choosenCargo -= cargo->getAmount();
 }
 
 Cargo* Store::getCargo(const uint16_t index) const {
-    return cargos_[index].get();
+    return (index < cargos_.size()) ? cargos_[index].get() : nullptr;
 }
 
 std::string getResponseMessage(const Response& responseMessage) {
@@ -66,4 +100,10 @@ std::string getResponseMessage(const Response& responseMessage) {
     case Response::lack_of_space:
         return "Lack of space!";
     }
+}
+
+Response Store::buy(Cargo* cargo, uint16_t amount, Player* player) {
+}
+
+Response Store::sell(Cargo* cargo, uint16_t amount, Player* player) {
 }
