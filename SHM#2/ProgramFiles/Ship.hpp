@@ -30,6 +30,8 @@ public:
     uint16_t getCrew() const;
     uint16_t getMaxCrew() const;
     uint16_t getCapacity() const;
+    std::shared_ptr<Cargo> getCargo(uint16_t) const;
+    std::vector<std::shared_ptr<Cargo>> getCargos() const;
 
     void setName(const std::string&);
 

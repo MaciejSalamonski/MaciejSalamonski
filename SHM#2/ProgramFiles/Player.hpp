@@ -25,5 +25,8 @@ public:
 
     void setMoney(uint16_t);
 
+    void loadCargoOnShip(std::shared_ptr<Cargo>);
+    void unloadCargoFromShip(std::shared_ptr<Cargo>);
+
     void payCrew(uint16_t) override;
 };

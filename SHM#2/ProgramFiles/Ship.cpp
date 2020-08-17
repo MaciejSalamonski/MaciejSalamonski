@@ -31,6 +31,12 @@ uint16_t Ship::getMaxCrew() const {
 uint16_t Ship::getCapacity() const {
     return capacity_;
 }
+std::shared_ptr<Cargo> Ship::getCargo(uint16_t index) const {
+    return cargos_[index];
+}
+std::vector<std::shared_ptr<Cargo>> Ship::getCargos() const {
+    return cargos_;
+}
 
 void Ship::setName(const std::string& name) {
     name_ = name;
