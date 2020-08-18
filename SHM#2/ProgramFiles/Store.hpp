@@ -19,13 +19,18 @@ class Store : public Observer {
     void removeFromStore(std::shared_ptr<Cargo>);
 
 public:
-    Store() = default;
+    Store();
+
     void load(std::shared_ptr<Cargo>, uint16_t);
     void unload(std::shared_ptr<Cargo>, uint16_t);
+
     std::string getResponseMessage(const Response&);
     Cargo* getCargo(const uint16_t) const;
+
     Response buy(std::shared_ptr<Cargo>, uint16_t, Player*);
     Response sell(std::shared_ptr<Cargo>, uint16_t, Player*);
+
+    friend std::ostream& operator<<(std::ostream&, const Store&);
 
     // Override from Observer
     void nextDay() override;

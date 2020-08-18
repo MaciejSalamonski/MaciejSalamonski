@@ -1,6 +1,7 @@
 #include "Store.hpp"
 
 #include <algorithm>
+#include <iomanip>
 #include <iterator>
 #include <random>
 
@@ -8,6 +9,11 @@
 #include "Fruit.hpp"
 #include "Item.hpp"
 #include "Store.hpp"
+
+Store::Store()
+    : cargos_(std::vector<std::shared_ptr<Cargo>>{}) {
+    generateCargo();
+}
 
 void Store::generateCargo() {
     std::vector<std::shared_ptr<Cargo>> possibleCargos{
@@ -128,4 +134,36 @@ Response Store::sell(std::shared_ptr<Cargo> cargo, uint16_t amount, Player* play
     player->unloadCargoFromShip(cargo);
 
     return Response::done;
+}
+
+constexpr bool addOption = true;
+constexpr bool subtractOption = false;
+constexpr uint16_t minRandomAmountChangeEachDay = 0;
+constexpr uint16_t maxRandomAmountChangeEachDay = 5;
+
+void Store::nextDay() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> randomAmountChangeEachDay(minRandomAmountChangeEachDay, maxRandomAmountChangeEachDay);
+    std::uniform_int_distribution<> options(addOption, subtractOption);
+
+    for (const auto& cargo : cargos_) {
+        if (options(gen) == addOption) {
+            *cargo += randomAmountChangeEachDay(gen);
+        } else {
+            *cargo -= randomAmountChangeEachDay(gen);
+        }
+    }
+}
+
+std::ostream& operator<<(std::ostream& out, const Store& store) {
+    for (const auto& cargo : store.cargos_) {
+        out << '\n'
+            << std::setfill('#') << std::setw(40) << '\n';
+        out << "Item name: " << std::setw(20) << cargo->getName() << std::setw(3) << " | ";
+        out << "Price: " << std::setw(20) << cargo->getPrice() << std::setw(3) << " | ";
+        out << "Amount: " << std::setw(20) << cargo->getAmount() << std::setw(3) << " | ";
+    }
+
+    return out;
 }
