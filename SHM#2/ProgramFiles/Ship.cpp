@@ -103,7 +103,7 @@ void Ship::removeFromStorage(std::shared_ptr<Cargo> cargo) {
     cargos_.erase(findMatchCargo(cargo));
 }
 
-void Ship::unload(std::shared_ptr<Cargo> cargo) {
+void Ship::unload(std::shared_ptr<Cargo> cargo, uint16_t amount) {
     auto choosenCargo = findMatchCargo(cargo);
 
     if (choosenCargo == cargos_.end()) {
@@ -114,7 +114,7 @@ void Ship::unload(std::shared_ptr<Cargo> cargo) {
         removeFromStorage(cargo);
         return;
     }
-    **choosenCargo -= cargo->getAmount();
+    **choosenCargo -= amount;
 }
 
 void Ship::nextDay() {

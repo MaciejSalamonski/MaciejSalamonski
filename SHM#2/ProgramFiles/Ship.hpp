@@ -41,7 +41,7 @@ public:
     void setName(const std::string&);
 
     void load(std::shared_ptr<Cargo>);
-    void unload(std::shared_ptr<Cargo>);
+    void unload(std::shared_ptr<Cargo>, uint16_t);
 
     Ship& operator+=(const uint16_t);
     Ship& operator-=(const uint16_t);

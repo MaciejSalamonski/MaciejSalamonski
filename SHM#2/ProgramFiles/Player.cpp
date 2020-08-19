@@ -50,8 +50,12 @@ void Player::payCrew(uint16_t money) {
     money_ = 0;
 }
 
-void loadCargoOnShip(std::shared_ptr<Cargo> cargo) {
+void Player::loadCargoOnShip(std::shared_ptr<Cargo> cargo) {
+    ship_->load(cargo);
+    updateAvailableSpace();
 }
 
-void unloadCargoFromShip(std::shared_ptr<Cargo> cargo) {
+void Player::unloadCargoFromShip(std::shared_ptr<Cargo> cargo, uint16_t amount) {
+    ship_->unload(cargo, amount);
+    updateAvailableSpace();
 }

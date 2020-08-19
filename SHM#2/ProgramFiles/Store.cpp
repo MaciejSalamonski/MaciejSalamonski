@@ -136,7 +136,7 @@ Response Store::buy(std::shared_ptr<Cargo> cargo, uint16_t amount, Player* playe
 Response Store::sell(std::shared_ptr<Cargo> cargo, uint16_t amount, Player* player) {
     load(cargo, amount);
     player->setMoney(player->getMoney() + cargo->getPrice());
-    player->unloadCargoFromShip(cargo);
+    player->unloadCargoFromShip(cargo, amount);
 
     return Response::done;
 }
