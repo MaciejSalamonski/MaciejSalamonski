@@ -1,6 +1,7 @@
 #include "Map.hpp"
 
 #include <algorithm>
+#include <cmath>
 #include <random>
 
 constexpr uint8_t islandsAmount = 10;
@@ -44,4 +45,17 @@ Island* Map::getIsland(const Coordinates& coordinate) {
         return &*soughtIsland;
     }
     return nullptr;
+}
+
+uint16_t Map::getDistanceToIsland(Island* destination) const {
+    uint16_t currentPosX = currentPosition_->getPosition().getPositionX();
+    uint16_t currentPosY = currentPosition_->getPosition().getPositionY();
+
+    uint16_t destinationPosX = destination->getPosition().getPositionX();
+    uint16_t destinationPosY = destination->getPosition().getPositionY();
+
+    uint16_t distanceX = std::max(currentPosX, destinationPosX) - std::min(currentPosX, destinationPosX);
+    uint16_t distanceY = std::max(currentPosY, destinationPosY) - std::min(currentPosY, destinationPosY);
+
+    return static_cast<uint16_t>(std::floor(std::hypot(distanceX, distanceY)));
 }

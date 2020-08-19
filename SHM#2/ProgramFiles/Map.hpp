@@ -11,5 +11,6 @@ class Map {
 public:
     Map();
     Island* getIsland(const Coordinates&);
+    uint16_t getDistanceToIsland(Island*) const;
     friend std::ostream& operator<<(std::ostream&, const Map&);
 };
