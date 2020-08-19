@@ -10,9 +10,14 @@
 #include "Item.hpp"
 #include "Store.hpp"
 
-Store::Store()
-    : cargos_(std::vector<std::shared_ptr<Cargo>>{}) {
+Store::Store(Time* time)
+    : time_(time), cargos_(std::vector<std::shared_ptr<Cargo>>{}) {
+    time_->addObserver(this);
     generateCargo();
+}
+
+Store::~Store() {
+    time_->removeObserver(this);
 }
 
 void Store::generateCargo() {

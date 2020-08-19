@@ -5,6 +5,7 @@
 
 #include "Cargo.hpp"
 #include "Player.hpp"
+#include "Time.hpp"
 
 class Ship : public Observer {
     uint16_t id_;
@@ -14,6 +15,7 @@ class Ship : public Observer {
     uint16_t maxCrew_;
     uint16_t capacity_;
     Delegate* delegate_;
+    Time* time_;
     std::vector<std::shared_ptr<Cargo>> cargos_;
 
     std::vector<std::shared_ptr<Cargo>>::iterator findMatchCargo(std::shared_ptr<Cargo>);
@@ -21,8 +23,11 @@ class Ship : public Observer {
 
 public:
     Ship();
-    Ship(uint16_t, const std::string&, uint16_t, Delegate*, uint16_t, uint16_t);
-    Ship(uint16_t, uint16_t, uint16_t);
+    Ship(uint16_t, const std::string&, uint16_t, Delegate*, uint16_t, uint16_t, Time*);
+    Ship(uint16_t, uint16_t, uint16_t, Delegate*, Time*);
+
+    //Override from Observer
+    ~Ship() override;
 
     uint16_t getId() const;
     std::string getName() const;

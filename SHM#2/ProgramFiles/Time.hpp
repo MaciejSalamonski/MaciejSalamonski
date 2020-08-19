@@ -7,13 +7,15 @@
 #include "Observer.hpp"
 
 class Time {
-    uint16_t timeElapsed_;
+    uint16_t timeElapsed_{};
     std::vector<Observer*> observers_;
-    //ObserverIT getObserverIt(Observer*);
+
 public:
-    Time();
+    Time() = default;
+
     void addObserver(Observer*);
     void removeObserver(Observer*);
+    void notify();
 
     uint16_t getElapsedTime() const;
     Time& operator++();

@@ -7,11 +7,18 @@
 Ship::Ship()
     : id_(-1) {}
 
-Ship::Ship(uint16_t id, const std::string& name, uint16_t speed, Delegate* delegate, uint16_t maxCrew, uint16_t capacity)
-    : id_(id), name_(name), speed_(speed), delegate_(delegate), maxCrew_(maxCrew), capacity_(capacity) {}
+Ship::Ship(uint16_t id, const std::string& name, uint16_t speed, Delegate* delegate, uint16_t maxCrew, uint16_t capacity, Time* time)
+    : id_(id), name_(name), speed_(speed), delegate_(delegate), maxCrew_(maxCrew), capacity_(capacity), time_(time) {
+    time_->addObserver(this);
+}
 
-Ship::Ship(uint16_t id, uint16_t speed, uint16_t maxCrew)
-    : Ship(id, "", speed, 0, maxCrew, 0) {}
+Ship::Ship(uint16_t id, uint16_t speed, uint16_t maxCrew, Delegate* delegate, Time* time)
+    : Ship(id, "", speed, delegate, maxCrew, 0, time) {}
+
+//Override from Observer
+Ship::~Ship() {
+    time_->removeObserver(this);
+}
 
 uint16_t Ship::getId() const {
     return id_;

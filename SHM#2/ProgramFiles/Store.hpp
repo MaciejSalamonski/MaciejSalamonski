@@ -2,6 +2,7 @@
 
 #include "Cargo.hpp"
 #include "Player.hpp"
+#include "Time.hpp"
 
 enum class Response {
     done,
@@ -12,6 +13,7 @@ enum class Response {
 
 class Store : public Observer {
     std::vector<std::shared_ptr<Cargo>> cargos_;
+    Time* time_;
 
     void generateCargo();
     void randomizeCargo(const std::vector<std::shared_ptr<Cargo>>&);
@@ -19,7 +21,10 @@ class Store : public Observer {
     void removeFromStore(std::shared_ptr<Cargo>);
 
 public:
-    Store();
+    Store(Time*);
+
+    //Override from Observer
+    ~Store() override;
 
     void load(std::shared_ptr<Cargo>, uint16_t);
     void unload(std::shared_ptr<Cargo>, uint16_t);

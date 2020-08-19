@@ -14,3 +14,9 @@ uint16_t Coordinates::getPositionY() const {
 bool Coordinates::operator==(const Coordinates& coordinates) const {
     return coordinates.getPositionX() == positionX_ && coordinates.getPositionY() == positionY_;
 }
+
+std::ostream& operator<<(std::ostream& out, const Coordinates& coordinates) {
+    out << "Coordinates: [" << std::setw(2) << coordinates.positionX_ << ", " << std::setw(2) << coordinates.positionY_ << "]";
+
+    return out;
+}
