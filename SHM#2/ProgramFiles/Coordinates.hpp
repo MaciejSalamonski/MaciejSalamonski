@@ -15,6 +15,8 @@ public:
     uint16_t getPositionX() const;
     uint16_t getPositionY() const;
 
+    static uint16_t Distance(const Coordinates&, const Coordinates&);
+
     bool operator==(const Coordinates&) const;
     friend std::ostream& operator<<(std::ostream&, const Coordinates&);
 };

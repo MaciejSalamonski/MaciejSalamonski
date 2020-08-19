@@ -48,14 +48,17 @@ Island* Map::getIsland(const Coordinates& coordinate) {
 }
 
 uint16_t Map::getDistanceToIsland(Island* destination) const {
-    uint16_t currentPosX = currentPosition_->getPosition().getPositionX();
-    uint16_t currentPosY = currentPosition_->getPosition().getPositionY();
+    return Coordinates::Distance(destination->getPosition(), currentPosition_->getPosition());
+}
 
-    uint16_t destinationPosX = destination->getPosition().getPositionX();
-    uint16_t destinationPosY = destination->getPosition().getPositionY();
+Island* Map::getCurrentPosition() const {
+    return currentPosition_;
+}
 
-    uint16_t distanceX = std::max(currentPosX, destinationPosX) - std::min(currentPosX, destinationPosX);
-    uint16_t distanceY = std::max(currentPosY, destinationPosY) - std::min(currentPosY, destinationPosY);
+void Map::Travel(Island* destination) {
+    if (currentPosition_ == destination) {
+        return;
+    }
 
-    return static_cast<uint16_t>(std::floor(std::hypot(distanceX, distanceY)));
+    currentPosition_ = destination;
 }
