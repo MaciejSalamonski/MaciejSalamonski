@@ -19,8 +19,8 @@ uint16_t Player::getSpeed() const {
     return ship_->getSpeed();
 }
 
-Cargo* Player::getCargo(uint16_t index) const {
-    ship_->getCargo(index);
+std::shared_ptr<Cargo> Player::getCargo(uint16_t index) const {
+    return ship_->getCargo(index);
 }
 
 void Player::updateAvailableSpace() {

@@ -20,8 +20,8 @@ public:
     uint16_t getMoney() const;
     uint16_t getAvailableSpace() const;
     uint16_t getSpeed() const;
-    Cargo* getCargo(uint16_t) const;
-    Cargo* getCargos() const;
+    std::shared_ptr<Cargo> getCargo(uint16_t) const;
+    std::shared_ptr<Cargo> getCargos() const;
 
     void setMoney(uint16_t);
 

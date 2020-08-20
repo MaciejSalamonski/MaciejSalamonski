@@ -37,8 +37,8 @@ Map::Map() {
 
 Island* Map::getIsland(const Coordinates& coordinate) {
     auto soughtIsland = std::find_if(islands_.begin(), islands_.end(),
-                                     [&coordinate](const auto positionX, const auto positionY) {
-                                         return coordinate.getPositionX() == positionX && coordinate.getPositionY() == positionY;
+                                     [&coordinate](const Island& island) {
+                                         return coordinate == island.getPosition();
                                      });
 
     if (soughtIsland != islands_.end()) {

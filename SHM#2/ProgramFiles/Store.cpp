@@ -11,7 +11,7 @@
 #include "Store.hpp"
 
 Store::Store(Time* time)
-    : time_(time), cargos_(std::vector<std::shared_ptr<Cargo>>{}) {
+    : time_(time) {
     time_->addObserver(this);
     generateCargo();
 }
