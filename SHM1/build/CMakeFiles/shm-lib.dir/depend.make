@@ -8,11 +8,24 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.o: ../ProgramFiles/src/Alcoh
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o: ../ProgramFiles/inc/Cargo.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o: ../ProgramFiles/src/Cargo.cpp
 
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o: ../ProgramFiles/inc/Coordinates.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o: ../ProgramFiles/src/Coordinates.cpp
+
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o: ../ProgramFiles/inc/Cargo.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o: ../ProgramFiles/inc/Fruit.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o: ../ProgramFiles/src/Fruit.cpp
 
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Island.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/src/Island.cpp
+
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/inc/Cargo.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/inc/Item.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/src/Item.cpp
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Map.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/src/Map.cpp
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o: ../ProgramFiles/inc/Cargo.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o: ../ProgramFiles/inc/Ship.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o: ../ProgramFiles/src/Ship.cpp
 

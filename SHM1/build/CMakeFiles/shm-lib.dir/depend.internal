@@ -8,11 +8,24 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.o
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o
+ ../ProgramFiles/inc/Coordinates.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Coordinates.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Fruit.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Fruit.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o
+ ../ProgramFiles/inc/Island.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Island.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Item.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
+ ../ProgramFiles/inc/Map.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o
+ ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Ship.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.cpp

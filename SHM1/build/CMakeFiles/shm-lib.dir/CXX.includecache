@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../ProgramFiles/inc/Cargo.hpp
+../ProgramFiles/inc/Coordinates.hpp
+algorithm
+../ProgramFiles/inc/algorithm
 cmath
--
-string
--
+../ProgramFiles/inc/cmath
+stdint.h
+../ProgramFiles/inc/stdint.h
 
-../ProgramFiles/inc/Item.hpp
-Cargo.hpp
-../ProgramFiles/inc/Cargo.hpp
-
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp
-Item.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Coordinates.cpp
+Coordinates.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Coordinates.hpp
 

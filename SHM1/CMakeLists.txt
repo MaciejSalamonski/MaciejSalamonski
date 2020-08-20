@@ -48,6 +48,10 @@ set(SOURCES
     ${SOURCE_DIR}/Alcohol.cpp
     ${SOURCE_DIR}/Fruit.cpp
     ${SOURCE_DIR}/Item.cpp
+    ${SOURCE_DIR}/Ship.cpp
+    ${SOURCE_DIR}/Coordinates.cpp
+    ${SOURCE_DIR}/Island.cpp
+    ${SOURCE_DIR}/Map.cpp
 )
 
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})

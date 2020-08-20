@@ -315,6 +315,33 @@ ProgramFiles/src/Cargo.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.s
 .PHONY : ProgramFiles/src/Cargo.cpp.s
 
+ProgramFiles/src/Coordinates.o: ProgramFiles/src/Coordinates.cpp.o
+
+.PHONY : ProgramFiles/src/Coordinates.o
+
+# target to build an object file
+ProgramFiles/src/Coordinates.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o
+.PHONY : ProgramFiles/src/Coordinates.cpp.o
+
+ProgramFiles/src/Coordinates.i: ProgramFiles/src/Coordinates.cpp.i
+
+.PHONY : ProgramFiles/src/Coordinates.i
+
+# target to preprocess a source file
+ProgramFiles/src/Coordinates.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.i
+.PHONY : ProgramFiles/src/Coordinates.cpp.i
+
+ProgramFiles/src/Coordinates.s: ProgramFiles/src/Coordinates.cpp.s
+
+.PHONY : ProgramFiles/src/Coordinates.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Coordinates.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.s
+.PHONY : ProgramFiles/src/Coordinates.cpp.s
+
 ProgramFiles/src/Fruit.o: ProgramFiles/src/Fruit.cpp.o
 
 .PHONY : ProgramFiles/src/Fruit.o
@@ -342,6 +369,33 @@ ProgramFiles/src/Fruit.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.s
 .PHONY : ProgramFiles/src/Fruit.cpp.s
 
+ProgramFiles/src/Island.o: ProgramFiles/src/Island.cpp.o
+
+.PHONY : ProgramFiles/src/Island.o
+
+# target to build an object file
+ProgramFiles/src/Island.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o
+.PHONY : ProgramFiles/src/Island.cpp.o
+
+ProgramFiles/src/Island.i: ProgramFiles/src/Island.cpp.i
+
+.PHONY : ProgramFiles/src/Island.i
+
+# target to preprocess a source file
+ProgramFiles/src/Island.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.i
+.PHONY : ProgramFiles/src/Island.cpp.i
+
+ProgramFiles/src/Island.s: ProgramFiles/src/Island.cpp.s
+
+.PHONY : ProgramFiles/src/Island.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Island.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.s
+.PHONY : ProgramFiles/src/Island.cpp.s
+
 ProgramFiles/src/Item.o: ProgramFiles/src/Item.cpp.o
 
 .PHONY : ProgramFiles/src/Item.o
@@ -368,6 +422,60 @@ ProgramFiles/src/Item.s: ProgramFiles/src/Item.cpp.s
 ProgramFiles/src/Item.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.s
 .PHONY : ProgramFiles/src/Item.cpp.s
+
+ProgramFiles/src/Map.o: ProgramFiles/src/Map.cpp.o
+
+.PHONY : ProgramFiles/src/Map.o
+
+# target to build an object file
+ProgramFiles/src/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
+.PHONY : ProgramFiles/src/Map.cpp.o
+
+ProgramFiles/src/Map.i: ProgramFiles/src/Map.cpp.i
+
+.PHONY : ProgramFiles/src/Map.i
+
+# target to preprocess a source file
+ProgramFiles/src/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.i
+.PHONY : ProgramFiles/src/Map.cpp.i
+
+ProgramFiles/src/Map.s: ProgramFiles/src/Map.cpp.s
+
+.PHONY : ProgramFiles/src/Map.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.s
+.PHONY : ProgramFiles/src/Map.cpp.s
+
+ProgramFiles/src/Ship.o: ProgramFiles/src/Ship.cpp.o
+
+.PHONY : ProgramFiles/src/Ship.o
+
+# target to build an object file
+ProgramFiles/src/Ship.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o
+.PHONY : ProgramFiles/src/Ship.cpp.o
+
+ProgramFiles/src/Ship.i: ProgramFiles/src/Ship.cpp.i
+
+.PHONY : ProgramFiles/src/Ship.i
+
+# target to preprocess a source file
+ProgramFiles/src/Ship.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.i
+.PHONY : ProgramFiles/src/Ship.cpp.i
+
+ProgramFiles/src/Ship.s: ProgramFiles/src/Ship.cpp.s
+
+.PHONY : ProgramFiles/src/Ship.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Ship.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.s
+.PHONY : ProgramFiles/src/Ship.cpp.s
 
 ProgramFiles/test/test.o: ProgramFiles/test/test.cpp.o
 
@@ -422,12 +530,24 @@ help:
 	@echo "... ProgramFiles/src/Cargo.o"
 	@echo "... ProgramFiles/src/Cargo.i"
 	@echo "... ProgramFiles/src/Cargo.s"
+	@echo "... ProgramFiles/src/Coordinates.o"
+	@echo "... ProgramFiles/src/Coordinates.i"
+	@echo "... ProgramFiles/src/Coordinates.s"
 	@echo "... ProgramFiles/src/Fruit.o"
 	@echo "... ProgramFiles/src/Fruit.i"
 	@echo "... ProgramFiles/src/Fruit.s"
+	@echo "... ProgramFiles/src/Island.o"
+	@echo "... ProgramFiles/src/Island.i"
+	@echo "... ProgramFiles/src/Island.s"
 	@echo "... ProgramFiles/src/Item.o"
 	@echo "... ProgramFiles/src/Item.i"
 	@echo "... ProgramFiles/src/Item.s"
+	@echo "... ProgramFiles/src/Map.o"
+	@echo "... ProgramFiles/src/Map.i"
+	@echo "... ProgramFiles/src/Map.s"
+	@echo "... ProgramFiles/src/Ship.o"
+	@echo "... ProgramFiles/src/Ship.i"
+	@echo "... ProgramFiles/src/Ship.s"
 	@echo "... ProgramFiles/test/test.o"
 	@echo "... ProgramFiles/test/test.i"
 	@echo "... ProgramFiles/test/test.s"
