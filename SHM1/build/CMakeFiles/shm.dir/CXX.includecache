@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ProgramFiles/inc/Cargo.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp
+Cargo.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.hpp
+

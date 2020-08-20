@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/shm-ut.dir/ProgramFiles/test/test.cpp.o  -o shm-ut  lib/libgtest_main.a lib/libgtest.a -lpthread 
