@@ -4,7 +4,7 @@ Item::Item(uint16_t amount, const std::string& name, uint16_t basePrice, Rarity 
     : Cargo(amount, name, basePrice), rarity_(rarity) {}
 
 Rarity Item::GetRarity() const {
-    rarity_;
+    return rarity_;
 }
 
 uint16_t Item::GetPrice() const {
@@ -12,15 +12,15 @@ uint16_t Item::GetPrice() const {
 }
 
 std::string Item::GetName() const {
-    name_;
+    return name_;
 }
 
 uint16_t Item::GetAmount() const {
-    amount_;
+    return amount_;
 }
 
 uint16_t Item::GetBasePrice() const {
-    basePrice_;
+    return basePrice_;
 }
 
 Cargo& Item::operator+=(uint16_t amount) {
