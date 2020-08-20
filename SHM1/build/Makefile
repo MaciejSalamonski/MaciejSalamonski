@@ -194,6 +194,19 @@ shm/fast:
 .PHONY : shm/fast
 
 #=============================================================================
+# Target rules for targets named shm-lib
+
+# Build rule for target.
+shm-lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shm-lib
+.PHONY : shm-lib
+
+# fast build rule for target.
+shm-lib/fast:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/build
+.PHONY : shm-lib/fast
+
+#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -245,6 +258,33 @@ gtest/fast:
 	$(MAKE) -f googletest-build/googletest/CMakeFiles/gtest.dir/build.make googletest-build/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+ProgramFiles/src/Alcohol.o: ProgramFiles/src/Alcohol.cpp.o
+
+.PHONY : ProgramFiles/src/Alcohol.o
+
+# target to build an object file
+ProgramFiles/src/Alcohol.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.o
+.PHONY : ProgramFiles/src/Alcohol.cpp.o
+
+ProgramFiles/src/Alcohol.i: ProgramFiles/src/Alcohol.cpp.i
+
+.PHONY : ProgramFiles/src/Alcohol.i
+
+# target to preprocess a source file
+ProgramFiles/src/Alcohol.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.i
+.PHONY : ProgramFiles/src/Alcohol.cpp.i
+
+ProgramFiles/src/Alcohol.s: ProgramFiles/src/Alcohol.cpp.s
+
+.PHONY : ProgramFiles/src/Alcohol.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Alcohol.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.s
+.PHONY : ProgramFiles/src/Alcohol.cpp.s
+
 ProgramFiles/src/Cargo.o: ProgramFiles/src/Cargo.cpp.o
 
 .PHONY : ProgramFiles/src/Cargo.o
@@ -252,6 +292,7 @@ ProgramFiles/src/Cargo.o: ProgramFiles/src/Cargo.cpp.o
 # target to build an object file
 ProgramFiles/src/Cargo.cpp.o:
 	$(MAKE) -f CMakeFiles/shm.dir/build.make CMakeFiles/shm.dir/ProgramFiles/src/Cargo.cpp.o
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o
 .PHONY : ProgramFiles/src/Cargo.cpp.o
 
 ProgramFiles/src/Cargo.i: ProgramFiles/src/Cargo.cpp.i
@@ -261,6 +302,7 @@ ProgramFiles/src/Cargo.i: ProgramFiles/src/Cargo.cpp.i
 # target to preprocess a source file
 ProgramFiles/src/Cargo.cpp.i:
 	$(MAKE) -f CMakeFiles/shm.dir/build.make CMakeFiles/shm.dir/ProgramFiles/src/Cargo.cpp.i
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.i
 .PHONY : ProgramFiles/src/Cargo.cpp.i
 
 ProgramFiles/src/Cargo.s: ProgramFiles/src/Cargo.cpp.s
@@ -270,7 +312,62 @@ ProgramFiles/src/Cargo.s: ProgramFiles/src/Cargo.cpp.s
 # target to generate assembly for a file
 ProgramFiles/src/Cargo.cpp.s:
 	$(MAKE) -f CMakeFiles/shm.dir/build.make CMakeFiles/shm.dir/ProgramFiles/src/Cargo.cpp.s
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.s
 .PHONY : ProgramFiles/src/Cargo.cpp.s
+
+ProgramFiles/src/Fruit.o: ProgramFiles/src/Fruit.cpp.o
+
+.PHONY : ProgramFiles/src/Fruit.o
+
+# target to build an object file
+ProgramFiles/src/Fruit.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o
+.PHONY : ProgramFiles/src/Fruit.cpp.o
+
+ProgramFiles/src/Fruit.i: ProgramFiles/src/Fruit.cpp.i
+
+.PHONY : ProgramFiles/src/Fruit.i
+
+# target to preprocess a source file
+ProgramFiles/src/Fruit.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.i
+.PHONY : ProgramFiles/src/Fruit.cpp.i
+
+ProgramFiles/src/Fruit.s: ProgramFiles/src/Fruit.cpp.s
+
+.PHONY : ProgramFiles/src/Fruit.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Fruit.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.s
+.PHONY : ProgramFiles/src/Fruit.cpp.s
+
+ProgramFiles/src/Item.o: ProgramFiles/src/Item.cpp.o
+
+.PHONY : ProgramFiles/src/Item.o
+
+# target to build an object file
+ProgramFiles/src/Item.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o
+.PHONY : ProgramFiles/src/Item.cpp.o
+
+ProgramFiles/src/Item.i: ProgramFiles/src/Item.cpp.i
+
+.PHONY : ProgramFiles/src/Item.i
+
+# target to preprocess a source file
+ProgramFiles/src/Item.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.i
+.PHONY : ProgramFiles/src/Item.cpp.i
+
+ProgramFiles/src/Item.s: ProgramFiles/src/Item.cpp.s
+
+.PHONY : ProgramFiles/src/Item.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Item.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.s
+.PHONY : ProgramFiles/src/Item.cpp.s
 
 ProgramFiles/test/test.o: ProgramFiles/test/test.cpp.o
 
@@ -314,13 +411,23 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... shm"
+	@echo "... shm-lib"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... ProgramFiles/src/Alcohol.o"
+	@echo "... ProgramFiles/src/Alcohol.i"
+	@echo "... ProgramFiles/src/Alcohol.s"
 	@echo "... ProgramFiles/src/Cargo.o"
 	@echo "... ProgramFiles/src/Cargo.i"
 	@echo "... ProgramFiles/src/Cargo.s"
+	@echo "... ProgramFiles/src/Fruit.o"
+	@echo "... ProgramFiles/src/Fruit.i"
+	@echo "... ProgramFiles/src/Fruit.s"
+	@echo "... ProgramFiles/src/Item.o"
+	@echo "... ProgramFiles/src/Item.i"
+	@echo "... ProgramFiles/src/Item.s"
 	@echo "... ProgramFiles/test/test.o"
 	@echo "... ProgramFiles/test/test.i"
 	@echo "... ProgramFiles/test/test.s"

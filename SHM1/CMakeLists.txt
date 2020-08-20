@@ -36,7 +36,6 @@ endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
 project(shm)
-enable_testing()
 
 set(INCLUDE_DIR ${CMAKE_SOURCE_DIR}/ProgramFiles/inc)
 set(SOURCE_DIR ${CMAKE_SOURCE_DIR}/ProgramFiles/src)
@@ -44,9 +43,21 @@ set(TEST_DIR ${CMAKE_SOURCE_DIR}/ProgramFiles/test)
 
 include_directories(${INCLUDE_DIR})
 
-set(SOURCES ${SOURCE_DIR}/Cargo.cpp)
+set(SOURCES 
+    ${SOURCE_DIR}/Cargo.cpp
+    ${SOURCE_DIR}/Alcohol.cpp
+    ${SOURCE_DIR}/Fruit.cpp
+    ${SOURCE_DIR}/Item.cpp
+)
+
+add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
 
 add_executable(${PROJECT_NAME} ${SOURCE_DIR}/Cargo.cpp)
 add_executable(${PROJECT_NAME}-ut ${TEST_DIR}/test.cpp)
 target_link_libraries(${PROJECT_NAME}-ut gtest_main)
-add_test(NAME example_test COMMAND example)
+
+target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Werror -Wconversion -pedantic -O3)
+target_compile_options(${PROJECT_NAME}-ut PRIVATE -Wall -Wextra -Werror -Wconversion -pedantic -O3)
+
+enable_testing()
+add_test(NAME ${PROJECT_NAME}_test COMMAND ${PROJECT_NAME}-ut)

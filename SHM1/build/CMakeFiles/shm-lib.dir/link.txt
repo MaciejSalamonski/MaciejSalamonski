@@ -1,0 +1,2 @@
+/usr/bin/ar qc libshm-lib.a  CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.o CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o
+/usr/bin/ranlib libshm-lib.a

@@ -7,6 +7,7 @@
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/edit_cache.dir
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/test.dir
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm.dir
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/googletest-build/CMakeFiles/install/strip.dir
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/googletest-build/CMakeFiles/install/local.dir
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/googletest-build/CMakeFiles/install.dir

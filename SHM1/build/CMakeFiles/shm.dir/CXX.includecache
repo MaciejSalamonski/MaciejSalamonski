@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 ../ProgramFiles/inc/Cargo.hpp
+cmath
+-
+string
+-
 
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp
 Cargo.hpp

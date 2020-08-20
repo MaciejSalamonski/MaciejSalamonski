@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ProgramFiles/inc/Cargo.hpp
+cmath
+-
+string
+-
+
+../ProgramFiles/inc/Item.hpp
+Cargo.hpp
+../ProgramFiles/inc/Cargo.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp
+Item.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.hpp
+
