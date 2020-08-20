@@ -14,7 +14,23 @@ cmath
 stdint.h
 ../ProgramFiles/inc/stdint.h
 
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Coordinates.cpp
+../ProgramFiles/inc/Island.hpp
 Coordinates.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Coordinates.hpp
+../ProgramFiles/inc/Coordinates.hpp
+
+../ProgramFiles/inc/Map.hpp
+vector
+-
+Island.hpp
+../ProgramFiles/inc/Island.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp
+Map.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.hpp
+algorithm
+-
+vector
+-
+random
+-
 
