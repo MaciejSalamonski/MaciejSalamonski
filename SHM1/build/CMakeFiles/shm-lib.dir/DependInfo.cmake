@@ -11,7 +11,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Island.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o"
+  "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o"
+  "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

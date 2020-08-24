@@ -28,7 +28,21 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Island.hp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Map.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/src/Map.cpp
 
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: ../ProgramFiles/inc/Cargo.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: ../ProgramFiles/inc/Player.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: ../ProgramFiles/inc/Ship.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: ../ProgramFiles/src/Player.cpp
+
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o: ../ProgramFiles/inc/Cargo.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o: ../ProgramFiles/inc/Ship.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o: ../ProgramFiles/src/Ship.cpp
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Alcohol.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Cargo.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Fruit.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Item.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Player.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Ship.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/inc/Store.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/src/Store.cpp
 

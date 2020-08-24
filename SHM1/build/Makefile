@@ -450,6 +450,33 @@ ProgramFiles/src/Map.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.s
 .PHONY : ProgramFiles/src/Map.cpp.s
 
+ProgramFiles/src/Player.o: ProgramFiles/src/Player.cpp.o
+
+.PHONY : ProgramFiles/src/Player.o
+
+# target to build an object file
+ProgramFiles/src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o
+.PHONY : ProgramFiles/src/Player.cpp.o
+
+ProgramFiles/src/Player.i: ProgramFiles/src/Player.cpp.i
+
+.PHONY : ProgramFiles/src/Player.i
+
+# target to preprocess a source file
+ProgramFiles/src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.i
+.PHONY : ProgramFiles/src/Player.cpp.i
+
+ProgramFiles/src/Player.s: ProgramFiles/src/Player.cpp.s
+
+.PHONY : ProgramFiles/src/Player.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.s
+.PHONY : ProgramFiles/src/Player.cpp.s
+
 ProgramFiles/src/Ship.o: ProgramFiles/src/Ship.cpp.o
 
 .PHONY : ProgramFiles/src/Ship.o
@@ -476,6 +503,33 @@ ProgramFiles/src/Ship.s: ProgramFiles/src/Ship.cpp.s
 ProgramFiles/src/Ship.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.s
 .PHONY : ProgramFiles/src/Ship.cpp.s
+
+ProgramFiles/src/Store.o: ProgramFiles/src/Store.cpp.o
+
+.PHONY : ProgramFiles/src/Store.o
+
+# target to build an object file
+ProgramFiles/src/Store.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o
+.PHONY : ProgramFiles/src/Store.cpp.o
+
+ProgramFiles/src/Store.i: ProgramFiles/src/Store.cpp.i
+
+.PHONY : ProgramFiles/src/Store.i
+
+# target to preprocess a source file
+ProgramFiles/src/Store.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.i
+.PHONY : ProgramFiles/src/Store.cpp.i
+
+ProgramFiles/src/Store.s: ProgramFiles/src/Store.cpp.s
+
+.PHONY : ProgramFiles/src/Store.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Store.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.s
+.PHONY : ProgramFiles/src/Store.cpp.s
 
 ProgramFiles/test/test.o: ProgramFiles/test/test.cpp.o
 
@@ -545,9 +599,15 @@ help:
 	@echo "... ProgramFiles/src/Map.o"
 	@echo "... ProgramFiles/src/Map.i"
 	@echo "... ProgramFiles/src/Map.s"
+	@echo "... ProgramFiles/src/Player.o"
+	@echo "... ProgramFiles/src/Player.i"
+	@echo "... ProgramFiles/src/Player.s"
 	@echo "... ProgramFiles/src/Ship.o"
 	@echo "... ProgramFiles/src/Ship.i"
 	@echo "... ProgramFiles/src/Ship.s"
+	@echo "... ProgramFiles/src/Store.o"
+	@echo "... ProgramFiles/src/Store.i"
+	@echo "... ProgramFiles/src/Store.s"
 	@echo "... ProgramFiles/test/test.o"
 	@echo "... ProgramFiles/test/test.i"
 	@echo "... ProgramFiles/test/test.s"

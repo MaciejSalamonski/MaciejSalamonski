@@ -161,6 +161,32 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp -o CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.s
 
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: CMakeFiles/shm-lib.dir/flags.make
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: ../ProgramFiles/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o -c /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp > CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.i
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp -o CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.s
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: CMakeFiles/shm-lib.dir/flags.make
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o: ../ProgramFiles/src/Store.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o -c /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp > CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.i
+
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp -o CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.s
+
 # Object files for target shm-lib
 shm__lib_OBJECTS = \
 "CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o" \
@@ -170,7 +196,9 @@ shm__lib_OBJECTS = \
 "CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o" \
 "CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o" \
 "CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o" \
-"CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o"
+"CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o" \
+"CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o" \
+"CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o"
 
 # External object files for target shm-lib
 shm__lib_EXTERNAL_OBJECTS =
@@ -183,9 +211,11 @@ libshm-lib.a: CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o
 libshm-lib.a: CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o
 libshm-lib.a: CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o
 libshm-lib.a: CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
+libshm-lib.a: CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o
+libshm-lib.a: CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o
 libshm-lib.a: CMakeFiles/shm-lib.dir/build.make
 libshm-lib.a: CMakeFiles/shm-lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libshm-lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libshm-lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/shm-lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shm-lib.dir/link.txt --verbose=$(VERBOSE)
 

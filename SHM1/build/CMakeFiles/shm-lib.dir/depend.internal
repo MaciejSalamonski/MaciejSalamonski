@@ -28,7 +28,21 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
  ../ProgramFiles/inc/Island.hpp
  ../ProgramFiles/inc/Map.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o
+ ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Player.hpp
+ ../ProgramFiles/inc/Ship.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Ship.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o
+ ../ProgramFiles/inc/Alcohol.hpp
+ ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Fruit.hpp
+ ../ProgramFiles/inc/Item.hpp
+ ../ProgramFiles/inc/Player.hpp
+ ../ProgramFiles/inc/Ship.hpp
+ ../ProgramFiles/inc/Store.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp

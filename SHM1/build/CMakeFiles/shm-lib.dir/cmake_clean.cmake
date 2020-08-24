@@ -6,7 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o"
   "CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o"
   "CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o"
+  "CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o"
   "CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o"
+  "CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o"
   "libshm-lib.a"
   "libshm-lib.pdb"
 )
