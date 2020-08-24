@@ -1,26 +1,10 @@
 #include "Alcohol.hpp"
 
-Alcohol::Alcohol(uint16_t amount, const std::string& name, uint16_t basePrice, uint16_t percentage)
+Alcohol::Alcohol(uint16_t amount, const std::string& name, uint16_t basePrice, uint8_t percentage)
     : Cargo(amount, name, basePrice), percentage_(percentage) {}
-
-uint16_t Alcohol::GetPercentage() const {
-    return percentage_;
-}
 
 uint16_t Alcohol::GetPrice() const {
     return static_cast<uint16_t>(std::floor(GetBasePrice() * GetPercentage() / MAX_ALCOHOL_POWER));
-}
-
-std::string Alcohol::GetName() const {
-    return name_;
-}
-
-uint16_t Alcohol::GetAmount() const {
-    return amount_;
-}
-
-uint16_t Alcohol::GetBasePrice() const {
-    return basePrice_;
 }
 
 Cargo& Alcohol::operator+=(uint16_t amount) {

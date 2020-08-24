@@ -15,13 +15,13 @@ class Item : public Cargo {
 public:
     Item(uint16_t, const std::string&, uint16_t, Rarity);
     ~Item() = default;
-    Rarity GetRarity() const;
+    Rarity GetRarity() const { return rarity_; }
 
     //Override from Cargo
     uint16_t GetPrice() const override;
-    std::string GetName() const override;
-    uint16_t GetAmount() const override;
-    uint16_t GetBasePrice() const override;
+    std::string GetName() const override { return name_; }
+    uint16_t GetAmount() const override { return amount_; }
+    uint16_t GetBasePrice() const override { return basePrice_; }
     Cargo& operator+=(uint16_t) override;
     Cargo& operator-=(uint16_t) override;
     bool operator==(const Cargo&) const override;
