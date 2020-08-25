@@ -54,6 +54,8 @@ set(SOURCES
     ${SOURCE_DIR}/Map.cpp
     ${SOURCE_DIR}/Player.cpp
     ${SOURCE_DIR}/Store.cpp
+    ${SOURCE_DIR}/Time.cpp
+    ${SOURCE_DIR}/Game.cpp
 )
 
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
