@@ -59,6 +59,8 @@ Store.hpp
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.hpp
 algorithm
 -
+iomanip
+-
 random
 -
 Alcohol.hpp
