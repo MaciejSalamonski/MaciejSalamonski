@@ -3,4 +3,5 @@
 
 CMakeFiles/shm.dir/ProgramFiles/src/Cargo.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Observer.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp

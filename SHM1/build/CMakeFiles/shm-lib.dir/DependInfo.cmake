@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Coordinates.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Fruit.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o"
+  "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Island.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o"
   "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o"
+  "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Time.cpp" "/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/build/CMakeFiles/shm-lib.dir/ProgramFiles/src/Time.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

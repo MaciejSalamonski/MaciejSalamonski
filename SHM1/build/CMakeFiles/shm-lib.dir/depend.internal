@@ -4,9 +4,11 @@
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Alcohol.cpp.o
  ../ProgramFiles/inc/Alcohol.hpp
  ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Observer.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Alcohol.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Cargo.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Observer.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o
  ../ProgramFiles/inc/Coordinates.hpp
@@ -14,7 +16,20 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Coordinates.cpp.o
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Fruit.hpp
+ ../ProgramFiles/inc/Observer.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Fruit.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o
+ ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Coordinates.hpp
+ ../ProgramFiles/inc/Delegate.hpp
+ ../ProgramFiles/inc/Game.hpp
+ ../ProgramFiles/inc/Island.hpp
+ ../ProgramFiles/inc/Map.hpp
+ ../ProgramFiles/inc/Observer.hpp
+ ../ProgramFiles/inc/Player.hpp
+ ../ProgramFiles/inc/Ship.hpp
+ ../ProgramFiles/inc/Time.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o
  ../ProgramFiles/inc/Coordinates.hpp
  ../ProgramFiles/inc/Island.hpp
@@ -22,6 +37,7 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Item.hpp
+ ../ProgramFiles/inc/Observer.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
  ../ProgramFiles/inc/Coordinates.hpp
@@ -30,19 +46,29 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Delegate.hpp
+ ../ProgramFiles/inc/Observer.hpp
  ../ProgramFiles/inc/Player.hpp
  ../ProgramFiles/inc/Ship.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Ship.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Delegate.hpp
+ ../ProgramFiles/inc/Observer.hpp
  ../ProgramFiles/inc/Ship.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.o
  ../ProgramFiles/inc/Alcohol.hpp
  ../ProgramFiles/inc/Cargo.hpp
+ ../ProgramFiles/inc/Delegate.hpp
  ../ProgramFiles/inc/Fruit.hpp
  ../ProgramFiles/inc/Item.hpp
+ ../ProgramFiles/inc/Observer.hpp
  ../ProgramFiles/inc/Player.hpp
  ../ProgramFiles/inc/Ship.hpp
  ../ProgramFiles/inc/Store.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Time.cpp.o
+ ../ProgramFiles/inc/Observer.hpp
+ ../ProgramFiles/inc/Time.hpp
+ /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Time.cpp

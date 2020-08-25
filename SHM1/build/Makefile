@@ -369,6 +369,33 @@ ProgramFiles/src/Fruit.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Fruit.cpp.s
 .PHONY : ProgramFiles/src/Fruit.cpp.s
 
+ProgramFiles/src/Game.o: ProgramFiles/src/Game.cpp.o
+
+.PHONY : ProgramFiles/src/Game.o
+
+# target to build an object file
+ProgramFiles/src/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o
+.PHONY : ProgramFiles/src/Game.cpp.o
+
+ProgramFiles/src/Game.i: ProgramFiles/src/Game.cpp.i
+
+.PHONY : ProgramFiles/src/Game.i
+
+# target to preprocess a source file
+ProgramFiles/src/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.i
+.PHONY : ProgramFiles/src/Game.cpp.i
+
+ProgramFiles/src/Game.s: ProgramFiles/src/Game.cpp.s
+
+.PHONY : ProgramFiles/src/Game.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.s
+.PHONY : ProgramFiles/src/Game.cpp.s
+
 ProgramFiles/src/Island.o: ProgramFiles/src/Island.cpp.o
 
 .PHONY : ProgramFiles/src/Island.o
@@ -531,6 +558,33 @@ ProgramFiles/src/Store.cpp.s:
 	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Store.cpp.s
 .PHONY : ProgramFiles/src/Store.cpp.s
 
+ProgramFiles/src/Time.o: ProgramFiles/src/Time.cpp.o
+
+.PHONY : ProgramFiles/src/Time.o
+
+# target to build an object file
+ProgramFiles/src/Time.cpp.o:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Time.cpp.o
+.PHONY : ProgramFiles/src/Time.cpp.o
+
+ProgramFiles/src/Time.i: ProgramFiles/src/Time.cpp.i
+
+.PHONY : ProgramFiles/src/Time.i
+
+# target to preprocess a source file
+ProgramFiles/src/Time.cpp.i:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Time.cpp.i
+.PHONY : ProgramFiles/src/Time.cpp.i
+
+ProgramFiles/src/Time.s: ProgramFiles/src/Time.cpp.s
+
+.PHONY : ProgramFiles/src/Time.s
+
+# target to generate assembly for a file
+ProgramFiles/src/Time.cpp.s:
+	$(MAKE) -f CMakeFiles/shm-lib.dir/build.make CMakeFiles/shm-lib.dir/ProgramFiles/src/Time.cpp.s
+.PHONY : ProgramFiles/src/Time.cpp.s
+
 ProgramFiles/test/test.o: ProgramFiles/test/test.cpp.o
 
 .PHONY : ProgramFiles/test/test.o
@@ -590,6 +644,9 @@ help:
 	@echo "... ProgramFiles/src/Fruit.o"
 	@echo "... ProgramFiles/src/Fruit.i"
 	@echo "... ProgramFiles/src/Fruit.s"
+	@echo "... ProgramFiles/src/Game.o"
+	@echo "... ProgramFiles/src/Game.i"
+	@echo "... ProgramFiles/src/Game.s"
 	@echo "... ProgramFiles/src/Island.o"
 	@echo "... ProgramFiles/src/Island.i"
 	@echo "... ProgramFiles/src/Island.s"
@@ -608,6 +665,9 @@ help:
 	@echo "... ProgramFiles/src/Store.o"
 	@echo "... ProgramFiles/src/Store.i"
 	@echo "... ProgramFiles/src/Store.s"
+	@echo "... ProgramFiles/src/Time.o"
+	@echo "... ProgramFiles/src/Time.i"
+	@echo "... ProgramFiles/src/Time.s"
 	@echo "... ProgramFiles/test/test.o"
 	@echo "... ProgramFiles/test/test.i"
 	@echo "... ProgramFiles/test/test.s"

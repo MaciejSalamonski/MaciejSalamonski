@@ -11,6 +11,10 @@ cmath
 -
 string
 -
+Observer.hpp
+../ProgramFiles/inc/Observer.hpp
+
+../ProgramFiles/inc/Observer.hpp
 
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.cpp
 Cargo.hpp
