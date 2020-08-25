@@ -1,11 +1,14 @@
 #pragma once
 
+#include "Delegate.hpp"
 #include "Ship.hpp"
 
-class Player {
+class Player : public Delegate {
     uint16_t money_;
     Ship* ship_;
     uint16_t availableSpace_;
+
+    void UpdateAvailableSpace();
 
 public:
     Player(uint16_t, Ship*, uint16_t);
@@ -17,4 +20,7 @@ public:
     Cargo* GetCargo(uint16_t) const;
     void PurchaseCargo(std::unique_ptr<Cargo>, uint16_t);
     void SellCargo(Cargo*, uint16_t);
+
+    //Override from Delegate
+    void PayCrew(uint16_t) override;
 };

@@ -3,7 +3,9 @@
 #include <cmath>
 #include <string>
 
-class Cargo {
+#include "Observer.hpp"
+
+class Cargo : public Observer {
 protected:
     uint16_t amount_;
     std::string name_;
@@ -12,6 +14,7 @@ protected:
 public:
     Cargo() = default;
     Cargo(uint16_t, const std::string&, uint16_t);
+    virtual ~Cargo() = default;
     virtual uint16_t GetPrice() const = 0;
     virtual std::string GetName() const = 0;
     virtual uint16_t GetAmount() const = 0;

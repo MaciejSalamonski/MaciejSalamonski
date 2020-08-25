@@ -9,6 +9,9 @@ class Fruit : public Cargo {
 public:
     Fruit(uint16_t, const std::string&, uint16_t, uint8_t, uint8_t);
     ~Fruit() = default;
+
+    Fruit& operator--();
+
     uint8_t GetTimeElapsed() const { return timeElapsed_; }
     uint8_t GetExpiryDate() const { return expiryDate_; }
 
@@ -20,4 +23,7 @@ public:
     Cargo& operator+=(uint16_t) override;
     Cargo& operator-=(uint16_t) override;
     bool operator==(const Cargo&) const override;
+
+    //Override from Observer
+    void NextDay() override;
 };
