@@ -4,10 +4,10 @@
 #include "Player.hpp"
 
 namespace {
-    constexpr uint8_t NUMBER_OF_ITEMS = 15;
-    constexpr uint8_t MIN_RANDOM_AMOUNT = 0;
-    constexpr uint8_t MAX_RANDOM_AMOUNT = 10;
-}  
+constexpr uint8_t NUMBER_OF_ITEMS = 15;
+constexpr uint8_t MIN_RANDOM_AMOUNT = 0;
+constexpr uint8_t MAX_RANDOM_AMOUNT = 10;
+}  // namespace
 
 enum class Response {
     lackOfMoney,
@@ -24,6 +24,8 @@ class Store : public Observer {
     std::vector<std::unique_ptr<Cargo>>::iterator FindMatchCargo(Cargo*);
     void RemoveFromStore(Cargo*);
     std::string ResponseMessage(const Response&);
+    void LoadCargoToStore(std::unique_ptr<Cargo>, uint16_t);
+    void UnloadCargoFromStore(std::unique_ptr<Cargo>, uint16_t);
 
 public:
     Store();

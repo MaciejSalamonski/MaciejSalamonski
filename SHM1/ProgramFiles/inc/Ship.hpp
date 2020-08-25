@@ -22,15 +22,15 @@ public:
     Ship(uint16_t, uint16_t, uint16_t, const std::string&, uint16_t);
     ~Ship() override {}
 
-    void Load(std::unique_ptr<Cargo>);
-    void Unload(std::unique_ptr<Cargo>);
+    void Load(std::unique_ptr<Cargo>, uint16_t);
+    void Unload(std::unique_ptr<Cargo>, uint16_t);
 
     uint16_t GetCapacity() const { return capacity_; }
     uint16_t GetCrew() const { return crew_; }
     uint16_t GetSpeed() const { return speed_; }
     std::string GetName() const { return name_; }
     uint16_t GetId() const { return id_; }
-    const std::vector<std::unique_ptr<Cargo>>& GetCargos() const {return cargo_;}
+    const std::vector<std::unique_ptr<Cargo>>& GetCargos() const { return cargo_; }
 
     Cargo* GetCargo(uint16_t) const;
 

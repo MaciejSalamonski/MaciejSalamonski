@@ -21,7 +21,7 @@ void Ship::RemoveFromStorage(Cargo* cargo) {
     cargo_.erase(FindMatchCargo(cargo));
 }
 
-void Ship::Load(std::unique_ptr<Cargo> cargo) {
+void Ship::Load(std::unique_ptr<Cargo> cargo, uint16_t amount) {
     uint16_t amountSum{};
 
     std::for_each(cargo_.begin(), cargo_.end(),
@@ -42,10 +42,10 @@ void Ship::Load(std::unique_ptr<Cargo> cargo) {
         return;
     }
 
-    **IsCargoUnique += cargo->GetAmount();
+    **IsCargoUnique += amount;
 }
 
-void Ship::Unload(std::unique_ptr<Cargo> cargo) {
+void Ship::Unload(std::unique_ptr<Cargo> cargo, uint16_t amount) {
     auto choosenCargo = FindMatchCargo(cargo.get());
 
     if (choosenCargo == cargo_.end()) {
@@ -57,7 +57,7 @@ void Ship::Unload(std::unique_ptr<Cargo> cargo) {
         return;
     }
 
-    **choosenCargo -= cargo->GetAmount();
+    **choosenCargo -= amount;
 }
 
 Cargo* Ship::GetCargo(uint16_t index) const {

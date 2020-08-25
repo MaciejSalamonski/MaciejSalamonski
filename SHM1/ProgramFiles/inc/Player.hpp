@@ -17,9 +17,11 @@ public:
     uint16_t GetMoney() const { return money_; }
     uint16_t GetSpeed() const { return ship_->GetSpeed(); }
 
+    void SetMoney(uint16_t);
+
     Cargo* GetCargo(uint16_t) const;
-    void PurchaseCargo(std::unique_ptr<Cargo>, uint16_t);
-    void SellCargo(Cargo*, uint16_t);
+    void LoadCargoOnShip(std::unique_ptr<Cargo>, uint16_t);
+    void UnloadCargoFromShip(std::unique_ptr<Cargo>, uint16_t);
 
     //Override from Delegate
     void PayCrew(uint16_t) override;

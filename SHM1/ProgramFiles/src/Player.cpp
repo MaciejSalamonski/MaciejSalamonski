@@ -7,11 +7,9 @@ void Player::UpdateAvailableSpace() {
     uint16_t spaceWhenShipIsEmpty = ship_->GetCapacity();
 
     for (const auto& cargo : ship_->GetCargos()) {
-        
         if (spaceWhenShipIsEmpty > cargo->GetAmount()) {
             spaceWhenShipIsEmpty -= cargo->GetAmount();
-        } 
-        else {
+        } else {
             availableSpace_ = 0;
 
             return;
@@ -31,4 +29,18 @@ void Player::PayCrew(uint16_t money) {
     }
 
     money_ = 0;
+}
+
+void Player::SetMoney(uint16_t money) {
+    money_ = money;
+}
+
+void Player::LoadCargoOnShip(std::unique_ptr<Cargo> cargo, uint16_t amount) {
+    ship_->Load(std::move(cargo), amount);
+    UpdateAvailableSpace();
+}
+
+void Player::UnloadCargoFromShip(std::unique_ptr<Cargo> cargo, uint16_t amount) {
+    ship_->Unload(std::move(cargo), amount);
+    UpdateAvailableSpace();
 }

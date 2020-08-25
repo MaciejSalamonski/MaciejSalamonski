@@ -60,14 +60,14 @@ void Store::RemoveFromStore(Cargo* cargo) {
 
 std::string Store::ResponseMessage(const Response& responseMessage) {
     switch (responseMessage) {
-    case Response::done:
-        return "Done!";
     case Response::lackOfCargo:
         return "Lack of cargo!";
     case Response::lackOfMoney:
         return "Lack of money!";
     case Response::lackOfSpace:
         return "Lack of space!";
+    case Response::done:
+        return "Done!";
     default:
         return "Unknown error. Try again!";
     }
@@ -80,12 +80,65 @@ Cargo* Store::GetCargo(uint16_t index) const {
 
     return nullptr;
 }
-/*
-Response Store::Buy(Cargo* cargo, uint16_t amount, Player* player) {
+
+void Store::LoadCargoToStore(std::unique_ptr<Cargo> cargo, uint16_t amount) {
+    auto IsCargoUnique = FindMatchCargo(cargo.get());
+
+    if (IsCargoUnique == storeCargo_.end()) {
+        storeCargo_.push_back(std::move(cargo));
+
+        return;
+    }
+
+    **IsCargoUnique += amount;
 }
 
-Response Store::Sell(Cargo*, uint16_t, Player*) {
+void Store::UnloadCargoFromStore(std::unique_ptr<Cargo> cargo, uint16_t amount) {
+    auto IsCargoUnique = FindMatchCargo(cargo.get());
+
+    if (IsCargoUnique == storeCargo_.end()) {
+        return;
+    }
+
+    if ((*IsCargoUnique)->GetAmount() <= cargo->GetAmount()) {
+        RemoveFromStore(cargo.get());
+
+        return;
+    }
+
+    **IsCargoUnique -= amount;
 }
-*/
+
+Response Store::Buy(Cargo* cargo, uint16_t amount, Player* player) {
+    auto choosenCargo = FindMatchCargo(cargo);
+
+    if (((*choosenCargo)->GetAmount() < amount) || (choosenCargo == storeCargo_.end())) {
+        return Response::lackOfCargo;
+    }
+
+    if ((*choosenCargo)->GetPrice() * amount > player->GetMoney()) {
+        return Response::lackOfMoney;
+    }
+
+    if (amount > player->GetAvailableSpace()) {
+        return Response::lackOfSpace;
+    }
+
+    std::unique_ptr<Cargo> uniquePtrCargo(cargo);
+    UnloadCargoFromStore(std::move(uniquePtrCargo), amount);
+    player->SetMoney(player->GetMoney() - (*choosenCargo)->GetPrice() * amount);
+    player->LoadCargoOnShip(std::move(uniquePtrCargo), amount);
+
+    return Response::done;
+}
+
+Response Store::Sell(Cargo* cargo, uint16_t amount, Player* player) {
+    std::unique_ptr<Cargo> uniquePtrCargo(cargo);
+    LoadCargoToStore(std::move(uniquePtrCargo), amount);
+    player->SetMoney(player->GetMoney() + cargo->GetPrice());
+    player->UnloadCargoFromShip(std::move(uniquePtrCargo), amount);
+
+    return Response::done;
+}
 
 void Store::NextDay() {}
