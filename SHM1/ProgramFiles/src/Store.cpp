@@ -80,11 +80,12 @@ Cargo* Store::GetCargo(uint16_t index) const {
 
     return nullptr;
 }
-
+/*
 Response Store::Buy(Cargo* cargo, uint16_t amount, Player* player) {
 }
 
-/*
 Response Store::Sell(Cargo*, uint16_t, Player*) {
 }
 */
+
+void Store::NextDay() {}

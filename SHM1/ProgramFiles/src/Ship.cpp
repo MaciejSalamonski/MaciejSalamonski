@@ -67,3 +67,7 @@ Cargo* Ship::GetCargo(uint16_t index) const {
 
     return nullptr;
 }
+
+void Ship::NextDay() {
+    delegate_->PayCrew(crew_);
+}

@@ -31,3 +31,13 @@ bool Fruit::operator==(const Cargo& cargo) const {
 
     return false;
 }
+
+Fruit& Fruit::operator--() {
+    --timeElapsed_;
+
+    return *this;
+}
+
+void Fruit::NextDay() {
+    operator--();
+}
