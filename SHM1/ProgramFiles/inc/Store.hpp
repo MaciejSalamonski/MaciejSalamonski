@@ -7,6 +7,10 @@ namespace {
 constexpr uint8_t NUMBER_OF_ITEMS = 15;
 constexpr uint8_t MIN_RANDOM_AMOUNT = 0;
 constexpr uint8_t MAX_RANDOM_AMOUNT = 10;
+constexpr bool SUBSTRACT = false;
+constexpr bool ADD = true;
+constexpr uint8_t MIN_RANDOM_AMOUNT_EACH_DAY = 1;
+constexpr uint8_t MAX_RANDOM_AMOUNT_EACH_DAY = 5;
 }  // namespace
 
 enum class Response {
@@ -32,6 +36,7 @@ public:
     Cargo* GetCargo(uint16_t) const;
     Response Buy(Cargo*, uint16_t, Player*);
     Response Sell(Cargo*, uint16_t, Player*);
+    friend std::ostream& operator<<(std::ostream&, const Store&);
 
     //Override from Observer
     void NextDay() override;
