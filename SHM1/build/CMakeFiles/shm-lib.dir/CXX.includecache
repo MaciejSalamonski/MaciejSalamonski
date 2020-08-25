@@ -18,14 +18,6 @@ string
 Observer.hpp
 ../ProgramFiles/inc/Observer.hpp
 
-../ProgramFiles/inc/Coordinates.hpp
-algorithm
-../ProgramFiles/inc/algorithm
-cmath
-../ProgramFiles/inc/cmath
-stdint.h
-../ProgramFiles/inc/stdint.h
-
 ../ProgramFiles/inc/Delegate.hpp
 stdint.h
 -
@@ -34,27 +26,9 @@ stdint.h
 Cargo.hpp
 ../ProgramFiles/inc/Cargo.hpp
 
-../ProgramFiles/inc/Game.hpp
-Map.hpp
-../ProgramFiles/inc/Map.hpp
-Time.hpp
-../ProgramFiles/inc/Time.hpp
-Player.hpp
-../ProgramFiles/inc/Player.hpp
-
-../ProgramFiles/inc/Island.hpp
-Coordinates.hpp
-../ProgramFiles/inc/Coordinates.hpp
-
 ../ProgramFiles/inc/Item.hpp
 Cargo.hpp
 ../ProgramFiles/inc/Cargo.hpp
-
-../ProgramFiles/inc/Map.hpp
-vector
--
-Island.hpp
-../ProgramFiles/inc/Island.hpp
 
 ../ProgramFiles/inc/Observer.hpp
 
@@ -79,30 +53,6 @@ Cargo.hpp
 ../ProgramFiles/inc/Cargo.hpp
 Player.hpp
 ../ProgramFiles/inc/Player.hpp
-
-../ProgramFiles/inc/Time.hpp
-Observer.hpp
-../ProgramFiles/inc/Observer.hpp
-stdint.h
--
-vector
--
-
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.cpp
-Game.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.hpp
-
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.cpp
-Player.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.hpp
-
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.cpp
-Ship.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Ship.hpp
-algorithm
--
-iostream
--
 
 /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp
 Store.hpp
