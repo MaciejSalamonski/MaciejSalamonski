@@ -16,6 +16,7 @@ class Map {
 
 public:
     Map();
+    void Travel(Island*);
     uint16_t GetDistanceToIsland(Island*) const;
     Island* GetIsland(const Coordinates&);
     Island* GetCurrentPosition() const { return currentPosition_; }

@@ -47,3 +47,11 @@ Island* Map::GetIsland(const Coordinates& coordinates) {
 
     return nullptr;
 }
+
+void Map::Travel(Island* destination) {
+    if (GetCurrentPosition() == destination) {
+        return;
+    }
+
+    currentPosition_ = destination;
+}

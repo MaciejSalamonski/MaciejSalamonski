@@ -1,9 +1,10 @@
 #pragma once
 
-#include "Observer.hpp"
-
 #include <stdint.h>
+
 #include <vector>
+
+#include "Observer.hpp"
 
 class Time {
     uint16_t timeElapsed_;
@@ -13,6 +14,6 @@ public:
     Time();
     void AddObserver(Observer*);
     void RemoveObserver(Observer*);
-    uint16_t GetElapsedTime() const {return timeElapsed_;}
+    uint16_t GetElapsedTime() const { return timeElapsed_; }
     Time& operator++();
 };
