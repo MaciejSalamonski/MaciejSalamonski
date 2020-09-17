@@ -5,9 +5,6 @@
 #include <string>
 #include <vector>
 
-//Michael:X|7/|9-|X|-8|8/|-6|X|X|X||81
-//wektor [10,0,7,3,9,0,10,0,0,8,8,2,0,6,10,0,10,0,10,0,0,0,8,1]
-
 std::string prepareStringWithPlayerResult(std::string& playerResults) {
     const char addToEndOfString = '|';
     playerResults.push_back(addToEndOfString);
@@ -17,93 +14,89 @@ std::string prepareStringWithPlayerResult(std::string& playerResults) {
 
 std::vector<std::string> foo(std::string& preparedStringWithPlayerResults) {
     std::string delimiter = "|";
-    size_t pos = 0;
+    size_t position = 0;
     std::string token;
     std::vector<std::string> vectorWithResultsForEachLine{};
-    while ((pos = preparedStringWithPlayerResults.find(delimiter)) != std::string::npos) {
-        token = preparedStringWithPlayerResults.substr(0, pos);
+    while ((position = preparedStringWithPlayerResults.find(delimiter)) != std::string::npos) {
+        token = preparedStringWithPlayerResults.substr(0, position);
         vectorWithResultsForEachLine.push_back(token);
-        preparedStringWithPlayerResults.erase(0, pos + delimiter.length());
+        preparedStringWithPlayerResults.erase(0, position + delimiter.length());
     }
 
     return vectorWithResultsForEachLine;
 }
 
+constexpr uint8_t STRIKE = 10;
+constexpr uint8_t ZERO_POINTS = 0;
+
 std::vector<int> bar(std::vector<std::string>& vectorWithResultsForEachLine) {
     std::vector<int> vectorWithResults;
 
     std::find_if(vectorWithResultsForEachLine.cbegin(), vectorWithResultsForEachLine.cend(),
-                 [&vectorWithResults](std::string sentence) {
-                     std::find_if(sentence.begin(), sentence.end(),
-                                  [&vectorWithResults, &sentence](char charackter) {
+                 [&vectorWithResults](std::string bowlingLineString) {
+                     std::find_if(bowlingLineString.cbegin(), bowlingLineString.cend(),
+                                  [&vectorWithResults, &bowlingLineString](char charackter) {
                                       if (charackter == 'X') {
-                                          vectorWithResults.push_back(10);
-                                          vectorWithResults.push_back(0);
+                                          vectorWithResults.push_back(STRIKE);
+                                          vectorWithResults.push_back(ZERO_POINTS);
                                       }
 
                                       if (charackter == '-') {
-                                          vectorWithResults.push_back(0);
-                                      }
-
-                                      if (charackter == '\0') {
-                                          vectorWithResults.push_back(0);
-                                          vectorWithResults.push_back(0);
-                                          return true;
+                                          vectorWithResults.push_back(ZERO_POINTS);
                                       }
 
                                       if (isdigit(charackter)) {
-                                          if (sentence[1] == '/') {
-                                              int x = *sentence.begin() - '0';
-                                              vectorWithResults.push_back(x);
-                                              int y = 10;
-                                              int z = y - x;
-                                              vectorWithResults.push_back(z);
+                                          if (bowlingLineString[1] == '/') {
+                                              uint8_t firstThrow = *bowlingLineString.begin() - '0';
+                                              uint8_t secondThrow = STRIKE - firstThrow;
+                                              vectorWithResults.push_back(firstThrow);
+                                              vectorWithResults.push_back(secondThrow);
                                               return true;
                                           }
-                                          int xd = charackter - '0';
-                                          vectorWithResults.push_back(xd);
+                                          uint8_t charackterToInteger = charackter - '0';
+                                          vectorWithResults.push_back(charackterToInteger);
                                       }
 
                                       if (isspace(charackter)) {
-                                          vectorWithResults.push_back(0);
-                                          vectorWithResults.push_back(0);
+                                          vectorWithResults.push_back(ZERO_POINTS);
+                                          vectorWithResults.push_back(ZERO_POINTS);
                                           return true;
                                       }
 
                                       return false;
                                   });
+
                      return false;
                  });
 
     return vectorWithResults;
 }
 
-void splitAndPrepareString(std::string& processingString, std::map<std::string, std::vector<std::string>>& mapWithPlayerNameAndResult) {
+void splitAndPrepareString(std::string& processingString, std::string& nickName, std::vector<int>& playerResult) {
     auto delimiterPosition = processingString.find_first_of(':');
     std::string playerResults = processingString.substr(++delimiterPosition),
                 playerName = processingString.substr(0, delimiterPosition);
+    nickName = playerName;
 
     std::string preparedStringWithPlayerResults = prepareStringWithPlayerResult(playerResults);
     std::vector<std::string> vectorWithResultsForEachLine = foo(preparedStringWithPlayerResults);
-    std::vector<int> preparedVectroWithResultsForEachLine = bar(vectorWithResultsForEachLine);
-
-    for (const auto& el : preparedVectroWithResultsForEachLine) {
-        std::cout << el << ' ';
-    }
-    std::cout << '\n';
-    //
-    //for (const auto& el : vectorWithResultsForEachLine) {
-    //    std::cout << el << " ";
-    //}
-    //std::cout << '\n';
-    // mapWithPlayerNameAndResult.insert(std::pair<std::string, std::string>(playerName, playerResults));
+    playerResult = bar(vectorWithResultsForEachLine);
 }
 
 int main() {
     std::string processingString = "Michael:X|7/|9-|X|-8|8/|-6|X|X|X| |81";
-    std::string string = "RACHEL:5/|5/|5/|5/|5/|5/|5/|5/|5/|5/||5";
-    std::map<std::string, std::vector<std::string>> mapWithPlayerNameAndResult;
-    splitAndPrepareString(processingString, mapWithPlayerNameAndResult);
+    std::string nickName;
+    std::vector<int> playerResult;
+    splitAndPrepareString(processingString, nickName, playerResult);
+
+    std::cout << nickName << '\n';
+    for (const auto& el : playerResult) {
+        std::cout << el << ' ';
+    }
+    std::cout << '\n';
 
     return 0;
 }
+
+//Michael:X|7/|9-|X|-8|8/|-6|X|X|X||81
+//wektor [10,0,7,3,9,0,10,0,0,8,8,2,0,6,10,0,10,0,10,0,0,0,8,1]
