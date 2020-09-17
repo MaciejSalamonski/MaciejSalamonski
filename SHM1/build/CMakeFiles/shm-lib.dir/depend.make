@@ -27,11 +27,18 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/inc/Map.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/inc/Observer.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/inc/Player.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/inc/Ship.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/inc/Store.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/inc/Time.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o: ../ProgramFiles/src/Game.cpp
 
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Cargo.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Coordinates.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Delegate.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Island.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Observer.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Player.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Ship.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/inc/Store.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o: ../ProgramFiles/src/Island.cpp
 
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/inc/Cargo.hpp
@@ -39,9 +46,15 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/inc/Item.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/inc/Observer.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o: ../ProgramFiles/src/Item.cpp
 
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Cargo.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Coordinates.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Delegate.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Island.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Map.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Observer.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Player.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Ship.hpp
+CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/inc/Store.hpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o: ../ProgramFiles/src/Map.cpp
 
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o: ../ProgramFiles/inc/Cargo.hpp

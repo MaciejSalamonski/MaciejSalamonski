@@ -28,11 +28,18 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Game.cpp.o
  ../ProgramFiles/inc/Observer.hpp
  ../ProgramFiles/inc/Player.hpp
  ../ProgramFiles/inc/Ship.hpp
+ ../ProgramFiles/inc/Store.hpp
  ../ProgramFiles/inc/Time.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Island.cpp.o
+ ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Coordinates.hpp
+ ../ProgramFiles/inc/Delegate.hpp
  ../ProgramFiles/inc/Island.hpp
+ ../ProgramFiles/inc/Observer.hpp
+ ../ProgramFiles/inc/Player.hpp
+ ../ProgramFiles/inc/Ship.hpp
+ ../ProgramFiles/inc/Store.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Island.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o
  ../ProgramFiles/inc/Cargo.hpp
@@ -40,9 +47,15 @@ CMakeFiles/shm-lib.dir/ProgramFiles/src/Item.cpp.o
  ../ProgramFiles/inc/Observer.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Map.cpp.o
+ ../ProgramFiles/inc/Cargo.hpp
  ../ProgramFiles/inc/Coordinates.hpp
+ ../ProgramFiles/inc/Delegate.hpp
  ../ProgramFiles/inc/Island.hpp
  ../ProgramFiles/inc/Map.hpp
+ ../ProgramFiles/inc/Observer.hpp
+ ../ProgramFiles/inc/Player.hpp
+ ../ProgramFiles/inc/Ship.hpp
+ ../ProgramFiles/inc/Store.hpp
  /home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp
 CMakeFiles/shm-lib.dir/ProgramFiles/src/Player.cpp.o
  ../ProgramFiles/inc/Cargo.hpp

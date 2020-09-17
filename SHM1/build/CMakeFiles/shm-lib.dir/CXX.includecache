@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../ProgramFiles/inc/Alcohol.hpp
-Cargo.hpp
-../ProgramFiles/inc/Cargo.hpp
-
 ../ProgramFiles/inc/Cargo.hpp
 cmath
 -
@@ -18,17 +14,37 @@ string
 Observer.hpp
 ../ProgramFiles/inc/Observer.hpp
 
+../ProgramFiles/inc/Coordinates.hpp
+algorithm
+../ProgramFiles/inc/algorithm
+cmath
+../ProgramFiles/inc/cmath
+stdint.h
+../ProgramFiles/inc/stdint.h
+
 ../ProgramFiles/inc/Delegate.hpp
 stdint.h
 -
 
-../ProgramFiles/inc/Fruit.hpp
-Cargo.hpp
-../ProgramFiles/inc/Cargo.hpp
+../ProgramFiles/inc/Game.hpp
+Map.hpp
+../ProgramFiles/inc/Map.hpp
+Time.hpp
+../ProgramFiles/inc/Time.hpp
+Player.hpp
+../ProgramFiles/inc/Player.hpp
 
-../ProgramFiles/inc/Item.hpp
-Cargo.hpp
-../ProgramFiles/inc/Cargo.hpp
+../ProgramFiles/inc/Island.hpp
+Coordinates.hpp
+../ProgramFiles/inc/Coordinates.hpp
+Store.hpp
+../ProgramFiles/inc/Store.hpp
+
+../ProgramFiles/inc/Map.hpp
+vector
+-
+Island.hpp
+../ProgramFiles/inc/Island.hpp
 
 ../ProgramFiles/inc/Observer.hpp
 
@@ -54,23 +70,25 @@ Cargo.hpp
 Player.hpp
 ../ProgramFiles/inc/Player.hpp
 
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.cpp
-Store.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Store.hpp
-algorithm
+../ProgramFiles/inc/Time.hpp
+Observer.hpp
+../ProgramFiles/inc/Observer.hpp
+stdint.h
 -
-iomanip
+vector
+-
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.cpp
+Game.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Game.hpp
+
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.cpp
+Map.hpp
+/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Map.hpp
+algorithm
 -
 random
 -
-Alcohol.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Alcohol.hpp
-Cargo.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Cargo.hpp
-Fruit.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Fruit.hpp
-Item.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Item.hpp
-Player.hpp
-/home/maciej/Documents/MyTasks/MaciejSalamonski/SHM1/ProgramFiles/src/Player.hpp
+vector
+-
 
