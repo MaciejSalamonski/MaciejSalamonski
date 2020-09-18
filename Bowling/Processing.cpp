@@ -24,12 +24,14 @@ std::vector<std::string> stringSplitting(std::string& preparedStringWithPlayerRe
     return vectorWithResultsForEachLine;
 }
 
+namespace {
 constexpr uint8_t strike = 10;
 constexpr uint8_t zeroPoints = 0;
 constexpr char isStrike = 'X';
 constexpr char isMiss = '-';
 constexpr char isSpare = '/';
 constexpr char convertCharToInt = '0';
+}  // namespace
 
 std::vector<int> stringParsing(std::vector<std::string>& vectorWithResultsForEachLine) {
     std::vector<int> vectorWithResults{};
@@ -80,7 +82,7 @@ void stringProcessing(std::string& processingString, std::string& nickName, std:
 }
 
 int main() {
-    std::string processingString = "Michael:X|7/|9-|X|-8|8/|-6|X|X|X||81|";
+    std::string processingString = "Michael:X|7/|9-|X|-8|8/|-6|X|X|X||81|3/|X|2/";
     std::string nickName;
     std::vector<int> playerResult;
     stringProcessing(processingString, nickName, playerResult);
