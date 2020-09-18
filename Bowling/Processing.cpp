@@ -59,12 +59,6 @@ std::vector<int> stringParsing(std::vector<std::string>& vectorWithResultsForEac
                                           vectorWithResults.push_back(charackterToInteger);
                                       }
 
-                                      if (isspace(charackter)) {
-                                          vectorWithResults.push_back(zeroPoints);
-                                          vectorWithResults.push_back(zeroPoints);
-                                          return true;
-                                      }
-
                                       return false;
                                   });
 
@@ -86,7 +80,7 @@ void stringProcessing(std::string& processingString, std::string& nickName, std:
 }
 
 int main() {
-    std::string processingString = "Michael:X|7/|9-|X|-8|8/|-6|X|X|X||81";
+    std::string processingString = "Michael:X|7/|9-|X|-8|8/|-6|X|X|X||81|";
     std::string nickName;
     std::vector<int> playerResult;
     stringProcessing(processingString, nickName, playerResult);
