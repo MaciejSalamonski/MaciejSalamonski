@@ -41,7 +41,7 @@ class GenerateTrees {
         std::shuffle(positionX.begin(), positionX.end(), gen);
         std::shuffle(positionY.begin(), positionY.end(), gen);
 
-        for (int i = 0; i < numberOfTrees; i++) {
+        for (size_t i = 0; i < numberOfTrees; i++) {
             positions_.emplace_back(std::make_pair(positionX[i], positionY[i]));
         }
 
@@ -50,9 +50,6 @@ class GenerateTrees {
 
 public:
     void generateTree() {
-        forest_.emplace_back(std::make_shared<Tree>(Tree{1, 2, "Sosna", "Zielona", {}}));
-        std::cout << "Sadzimy zielona sosne!" << '\n';
-
         for (const auto& coordinates : getPosition()) {
             forest_.emplace_back(std::make_shared<Tree>(Tree{coordinates.first, coordinates.second, "Sosna", "Zielona", {}}));
             std::cout << "Sadzimy zielona sosne! "
