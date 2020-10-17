@@ -7,7 +7,6 @@
 #include <vector>
 
 constexpr int arrSize = 1000000;
-constexpr int numberOfTrees = 200;
 
 class Tree {
     unsigned int coordX_{};
@@ -21,10 +20,10 @@ public:
         : coordX_(coordX), coordY_(coordY), name_(name), color_(color), texture_(texture) {}
 };
 
-class GenerateTrees {
+class GenerateForest {
     std::vector<std::shared_ptr<Tree>> forest_{};
 
-    std::vector<std::pair<unsigned int, unsigned int>> getPosition() {
+    std::vector<std::pair<unsigned int, unsigned int>> getPosition(const int numberOfTrees) {
         std::vector<std::pair<unsigned int, unsigned int>> positions_;
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -49,11 +48,11 @@ class GenerateTrees {
     }
 
 public:
-    void generateTree() {
-        for (const auto& coordinates : getPosition()) {
-            forest_.emplace_back(std::make_shared<Tree>(Tree{coordinates.first, coordinates.second, "Sosna", "Zielona", {}}));
-            std::cout << "Sadzimy zielona sosne! "
-                      << "Wspolrzedna X: " << coordinates.first
+    void generateForest(const std::string& name, const std::string& color, unsigned int numberOfTrees) {
+        for (const auto& coordinates : getPosition(numberOfTrees)) {
+            forest_.emplace_back(std::make_shared<Tree>(Tree{coordinates.first, coordinates.second, name, color, {}}));
+            std::cout << name << " " << color << ":"
+                      << " Wspolrzedna X: " << coordinates.first
                       << " Wspolrzedna Y: " << coordinates.second
                       << '\n';
         }
@@ -61,8 +60,8 @@ public:
 };
 
 int main() {
-    auto generateTrees = std::make_shared<GenerateTrees>();
-    generateTrees->generateTree();
+    auto forest = std::make_shared<GenerateForest>();
+    forest->generateForest("Sosna", "Zielona", 200);
 
     return 0;
 }
