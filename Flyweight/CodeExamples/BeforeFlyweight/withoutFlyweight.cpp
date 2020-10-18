@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-constexpr int arrSize = 1000000;
+constexpr int arrSize = 100000;
 
 class Tree {
     unsigned int coordX_{};
@@ -23,7 +23,7 @@ public:
 class GenerateForest {
     std::vector<std::shared_ptr<Tree>> forest_{};
 
-    std::vector<std::pair<unsigned int, unsigned int>> getPosition(const int numberOfTrees) {
+    std::vector<std::pair<unsigned int, unsigned int>> getPosition(const unsigned int numberOfTrees) {
         std::vector<std::pair<unsigned int, unsigned int>> positions_;
         std::random_device rd;
         std::mt19937 gen(rd());

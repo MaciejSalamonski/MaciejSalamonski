@@ -1,11 +1,13 @@
+#include <algorithm>
 #include <array>
 #include <iostream>
 #include <map>
 #include <memory>
+#include <random>
 #include <string>
 #include <vector>
 
-constexpr int arrSize = 500000;
+constexpr int arrSize = 100000;
 
 class TreeSharedShate {
 public:
@@ -24,6 +26,11 @@ class TreeUniqueState {
 public:
     TreeUniqueState(const unsigned int& coordX, const unsigned int& coordY)
         : coordX_(coordX), coordY_(coordY) {}
+
+    void fillCoords(const TreeUniqueState& us) {
+        us.coordX_;
+        us.coordY_;
+    }
 };
 
 class Flyweight {
@@ -35,6 +42,10 @@ public:
 
     Flyweight(const Flyweight& other)
         : treeSharedState_(other.treeSharedState_) {}
+
+    void Operation(const TreeUniqueState& treeUniqueState) const {
+        treeUniqueState;
+    }
 };
 
 class FlyweightFactory {
@@ -46,7 +57,6 @@ class FlyweightFactory {
 
 public:
     FlyweightFactory(std::initializer_list<TreeSharedShate> treeSharedState) {
-        std::cout << "elo " << '\n';
         for (const TreeSharedShate& el : treeSharedState) {
             this->flyweights_.insert(std::make_pair<std::shared_ptr<TreeSharedShate>, Flyweight>(
                 this->GetKey(el), Flyweight(std::make_shared<TreeSharedShate>(el))));
@@ -68,11 +78,58 @@ public:
     }
 };
 
-int main() {
-    auto ptr = std::make_shared<FlyweightFactory>(std::initializer_list<TreeSharedShate>{
+class GenerateForest {
+    std::vector<std::pair<unsigned int, unsigned int>> getPosition(const int numberOfTrees) {
+        std::vector<std::pair<unsigned int, unsigned int>> positions_;
+        std::random_device rd;
+        std::mt19937 gen(rd());
+
+        const int sizeX = 1000;
+        const int sizeY = 1000;
+
+        std::vector<unsigned int> positionX(sizeX);
+        std::vector<unsigned int> positionY(sizeY);
+
+        std::iota(positionX.begin(), positionX.end(), 0);
+        std::iota(positionY.begin(), positionY.end(), 0);
+
+        std::shuffle(positionX.begin(), positionX.end(), gen);
+        std::shuffle(positionY.begin(), positionY.end(), gen);
+
+        for (size_t i = 0; i < numberOfTrees; i++) {
+            positions_.emplace_back(std::make_pair(positionX[i], positionY[i]));
+        }
+
+        return positions_;
+    }
+
+    FlyweightFactory& factory = std::make_shared<FlyweightFactory>(std::initializer_list<TreeSharedShate>{
         TreeSharedShate{"Sosna", "Zielona", {}},
-        TreeSharedShate{"Brzoza", "Zolya", {}}});
-    ptr->FlyweightCounter();
+        TreeSharedShate{"Wierzba", "Czarna", {}},
+        TreeSharedShate{"Brzoza", "Biala", {}}});
+
+public:
+    void addSingleTree(FlyweightFactory& ff, const std::string& name, const std::string& color, const std::array<int, arrSize>& texture, const unsigned int& coordX, const unsigned int& coordY) {
+        const Flyweight& flyweight = ff.GetFlyweight(TreeSharedShate{name, color, {}});
+        flyweight.Operation({coordX, coordY});
+    }
+
+    void generateForest(const std::string& name, const std::string& color, unsigned int numberOfTrees) {
+        for (const auto& coordinates : getPosition(numberOfTrees)) {
+            addSingleTree(factory, name, color, {}, coordinates.first, coordinates.second);
+        }
+    }
+};
+
+int main() {
+    //auto factory = std::make_shared<FlyweightFactory>(std::initializer_list<TreeSharedShate>{
+    //    TreeSharedShate{"Sosna", "Zielona", {}},
+    //    TreeSharedShate{"Wierzba", "Czarna", {}},
+    //    TreeSharedShate{"Brzoza", "Biala", {}}});
+    //factory->FlyweightCounter();
+    //
+    //auto forest = std::make_shared<GenerateForest>();
+    //forest->generateForest("Sosna", "Zielona", 200);
 
     return 0;
 }
