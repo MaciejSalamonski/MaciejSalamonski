@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-constexpr int arrSize = 1000000;
+constexpr int arrSize = 500000;
 
 class TreeSharedShate {
 public:
@@ -46,6 +46,7 @@ class FlyweightFactory {
 
 public:
     FlyweightFactory(std::initializer_list<TreeSharedShate> treeSharedState) {
+        std::cout << "elo " << '\n';
         for (const TreeSharedShate& el : treeSharedState) {
             this->flyweights_.insert(std::make_pair<std::shared_ptr<TreeSharedShate>, Flyweight>(
                 this->GetKey(el), Flyweight(std::make_shared<TreeSharedShate>(el))));
