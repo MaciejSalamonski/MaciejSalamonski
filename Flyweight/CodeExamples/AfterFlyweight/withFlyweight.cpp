@@ -68,7 +68,9 @@ public:
 };
 
 int main() {
-    auto ptr = std::make_shared<FlyweightFactory>(std::initializer_list<TreeSharedShate>{TreeSharedShate{"Sosna", "Zielona", {}}, TreeSharedShate{"Brzoza", "Zol", {}}});
+    auto ptr = std::make_shared<FlyweightFactory>(std::initializer_list<TreeSharedShate>{
+        TreeSharedShate{"Sosna", "Zielona", {}},
+        TreeSharedShate{"Brzoza", "Zolya", {}}});
     ptr->FlyweightCounter();
 
     return 0;
