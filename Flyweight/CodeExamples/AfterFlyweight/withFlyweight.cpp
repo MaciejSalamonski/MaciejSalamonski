@@ -17,6 +17,10 @@ public:
 
     TreeSharedShate(const std::string& name, const std::string& color, const std::array<int, arrSize>& texture)
         : name_(name), color_(color), texture_(texture) {}
+
+    friend std::ostream& operator<<(std::ostream& os, const TreeSharedShate& us) {
+        return os << "[ " << us.name_ << " , " << us.color_ << " ]";
+    }
 };
 
 class TreeUniqueState {
@@ -30,6 +34,10 @@ public:
     void fillCoords(const TreeUniqueState& us) {
         us.coordX_;
         us.coordY_;
+    }
+
+    friend std::ostream& operator<<(std::ostream& os, const TreeUniqueState& us) {
+        return os << "[ " << us.coordX_ << " , " << us.coordY_ << " ]";
     }
 };
 
@@ -45,6 +53,7 @@ public:
 
     void Operation(const TreeUniqueState& treeUniqueState) const {
         treeUniqueState;
+        std::cout << "Drzewo (" << treeSharedState_ << ") O wspolrzednych: (" << treeUniqueState << ") state.\n";
     }
 };
 
@@ -128,8 +137,8 @@ int main() {
     //    TreeSharedShate{"Brzoza", "Biala", {}}});
     //factory->FlyweightCounter();
     //
-    //auto forest = std::make_shared<GenerateForest>();
-    //forest->generateForest("Sosna", "Zielona", 200);
+    auto forest = std::make_shared<GenerateForest>();
+    forest->generateForest("Sosna", "Zielona", 200);
 
     return 0;
 }
